@@ -1,0 +1,39 @@
+<meta charset = "UTF-8">
+<link rel="stylesheet" type="text/css" href="./css/user_login.css?v=3">
+<div class="loginBase">
+    <form onsubmit="return loginSubmit()" id="loginForm" method="post" action="./loginok.php" enctype="application/x-www-form-urlencoded">
+        <input type="hidden" name="key" value="ocn">
+        <span>MEMBER-LOGIN</span>
+        <div class="login">
+            <div>
+                <ul>
+                    <li>아이디</li>
+                    <li><input type="text" id="loginId" name="user_id"></li>
+                    <li>비밀번호</li>
+                    <li><input type="password" id="loginPass"  name="user_pw"></li>
+                </ul>
+                <input type="submit" value="로그인">
+            </div>
+            <span class="clear"><label><input type="checkbox" id="auto" onclick="loginSave(this.checked)">아이디 저장하기</label></span>
+            <label>
+                <div onclick="loginReg()">회원가입</div>
+                <div>아이디 찾기</div>
+                <div>비밀번호 찾기</div>
+            </label>
+        </div>
+    </form>
+        <div class="nologin">
+            <div>
+                <label>비회원 결제 내역 확인</label>
+                <ul>
+                    <li>주문자명</li>
+                    <li><input type="text"></li>
+                    <li>결제번호</li>
+                    <li><input type="text"></li>
+                </ul>
+                <input type="submit" value="조회하기">
+            </div>
+            <span class="clear">※주문자명과 결제번호를 잊으신 경우, 고객센터로 문의하여 주시기 바랍니다.</span>
+        </div>
+</div>
+<script src="./js/user_login.js?v=2"></script>

@@ -1,0 +1,26 @@
+<?php 
+    include "user.php";     //aid, aname, aemail (로그인 정보 출력)
+?>
+<meta charset="UTF-8">
+<div class="top">
+    <img src="./images/tving_logo.png">
+    <ul id="topUl">
+        <li class="login"><span id="username"></span> 님 환영합니다. <a href="./logout.php">[로그아웃]</a></li>
+    </ul>
+</div>
+<script src="./js/top.js?v=4"></script>
+<script>
+    var username = "<?php echo $aname?>";
+    var logout = document.getElementsByClassName("logout");
+    var login = document.getElementsByClassName("login");
+    if(username != ""){
+        logout[0].style.display = "none";
+        logout[1].style.display = "none";
+        login[0].style.display = "block";
+        document.getElementById("username").innerText = username;
+    }else{
+        logout[0].style.display = "block";
+        logout[1].style.display = "block";
+        login[0].style.display = "none";
+    }
+</script>

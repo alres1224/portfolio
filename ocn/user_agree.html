@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="./css/user_agree.css?v=3">
+<div class="agreeBase">
+    <span>
+        <p>MEMBER-SHIP</p>
+        <ul>
+            <li>이용약관 동의</li>
+            <li><img src="./images/step_on.png"></li>
+            <li>정보입력</li>
+            <li><img src="./images/step_on.png"></li>
+            <li>가입완료</li>
+        </ul>
+    </span>
+    <form id="agreeForm" method="get" action="./memberinfo.html">
+        <div>
+            <ul>
+                <li>약관동의</li>
+                <li><label><input type="checkbox" value="all" onclick="agreeAll(this.checked)">모든 약관에 전체 동의 합니다. (선택 항목도 포함됩니다.)</label></li>
+                <li><label><input type="checkbox" name="m_agree1" value="y"><em>(필수)</em> 이용약관 동의</label></li>
+                <li><label id="agreeBox1"></label></li>
+                <li><label><input type="checkbox" name="m_agree2" value="y"><em>(필수)</em> 개인정보 수집 및 이용안내</label></li>
+                <li><label id="agreeBox2"></label></li>
+            </ul>
+            <label onclick="agreeNext()">다음단계</label>
+        </div>
+    </form>
+</div>
+<script src="./js/user_agree.js?v=1"></script>

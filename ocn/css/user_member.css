@@ -1,0 +1,172 @@
+@charset "UTF-8";
+.memberBase{
+    width: 1200px;
+    height: 655px;
+    margin: 0 auto;
+    padding: 40px 50px 0 50px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+}
+/*MEMBER-SHIP 라인*/
+.memberBase > span {
+    width: 1100px;
+    height: 60px;
+    border-bottom: 1px solid #FFA500;
+}
+.memberBase > span > p{
+    width: 120px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: 700;
+    float: left;
+}
+.memberBase > span > ul{
+    width: 360px;
+    height: inherit;
+    float: right;
+}
+.memberBase > span > ul > li{
+    width: 100px;
+    height: inherit;
+    float: left;
+    line-height: 60px;
+    text-align: center;
+}
+.memberBase > span > ul > li:nth-of-type(3){
+    color: #F6C757;
+}
+.memberBase > span > ul > li:nth-of-type(even){
+    width: 30px;
+}
+
+/*기본정보 글자*/
+.memberInfo{
+    width: 1100px;
+    height: auto;
+    padding: 30px 20px 0 20px;
+    box-sizing: border-box;
+}
+.memberInfo > span{
+    width: 1060px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+/*정보 입력 파트*/
+.memberInfo > ul{
+    width: 905px;
+    height: 395px;
+    padding: 10px 0 25px 0;
+    box-sizing: border-box;
+}
+.memberInfo > ul > li{
+    float: left;
+    height: 40px;
+    line-height: 30px;
+    padding: 5px 0 5px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid white;
+}
+.memberInfo > ul > li:nth-of-type(odd){
+    width: 120px;
+    margin-right: 5px;
+    background-color: #F8B923;
+    text-indent: 10px;
+}
+.memberInfo > ul > li:nth-of-type(even){
+    width: 780px;
+}
+.memberInfo > ul > li:nth-of-type(1){
+    border-radius: 3px 0 0 0;
+}
+.memberInfo > ul > li:nth-of-type(13), .memberInfo > ul > li:nth-of-type(14){
+    height: 120px;
+    padding: 5px 0 5px 0;
+}
+.memberInfo > ul > li:nth-of-type(13){
+    line-height: 110px;
+    border-radius:  0 0 0 5px;
+}
+.memberInfo > ul > li:nth-of-type(14){
+    border: 0;
+}
+.memberInfo > ul > li > input[type=text] ,.memberInfo > ul > li > input[type=password]{
+    width: 200px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid #F8B923;
+    margin-right: 5px;
+    border-radius: 3px;
+    text-indent: 3px;
+    vertical-align: 0.5px;
+}
+.memberInfo > ul > li > div{
+    width: 100px;
+    height: 30px;
+    background-color: #F8B923;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.memberInfo > ul > li >label{
+    display: inline-block;
+}
+.memberInfo > ul > li > p{
+    line-height: 30px;
+    display: inline-block;
+}
+.memberInfo > ul > li > select{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #F8B923;
+    border-radius: 3px;
+    font-size: 13px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.memberInfo > ul > li > input[type=checkbox]{
+    width: 13px;
+    height: 13px;
+    vertical-align: -1px;
+    margin-left: 5px;
+}
+.memberInfo > ul > li:nth-of-type(14) > div{
+    width: 150px;
+}
+.memberInfo > ul > li:nth-of-type(14) > input {
+    width: 780px;
+    margin-top: 10px;
+}
+.memberInfo > ul > li:nth-of-type(14) > input:first-of-type{
+    width: 200px;
+    margin-top: 0;
+}
+
+/*하단 버튼 두 개*/
+.memberInfo > label{
+    width: 310px;
+    height: 45px;
+    margin: 0 auto;
+}
+.memberBtn1{
+    width: 150px;
+    height: 45px;
+    background-color: #F8B923;  
+    float: left;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.memberBtn2{
+    background-color: gray;
+    margin-left: 10px;
+}

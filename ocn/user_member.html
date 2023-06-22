@@ -1,0 +1,52 @@
+
+<link rel="stylesheet" type="text/css" href="./css/user_member.css?v=4">
+<script src="./js/jquery.js"></script>
+<meta charset="UTF-8">
+<div class="memberBase">
+    <span>
+        <p>MEMBER-SHIP</p>
+        <ul>
+            <li>이용약관 동의</li>
+            <li><img src="./images/step_on.png"></li>
+            <li>정보입력</li>
+            <li><img src="./images/step_on.png"></li>
+            <li>가입완료</li>
+        </ul>
+    </span>
+    <form id="memberForm" method="post" action="memberok.php" enctype="application/x-www-form-urlencoded">
+        <input type="hidden" name="m_agree1" value="">
+        <input type="hidden" name="m_agree2" value="">
+        <div class="memberInfo">
+            <span>기본정보</span>
+            <ul>
+                <li>아이디</li><li><input type="text" name="m_userid"><div onclick="memberIdCheck()">중복체크</div><p>※ 아이디는 최소 5자 이상입니다.</p></li>
+                <li>비밀번호</li><li><input type="password" name="m_userpw"><p>※ 비밀번호는 최소 6자 이상입니다.</p></li>
+                <li>비밀번호 확인</li><li><input type="password" id="userpwck"><p>※ 동일한 비밀번호를 입력하세요.</p></li>
+                <li>고객명</li><li><input type="text" name="m_usernm"></li>
+                <li>이메일</li>
+                <li><input type="text" name="m_usermail">
+                    <select onchange="memberMail(this.value)" id="memberSelect">
+                        <option value="">직접 입력</option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="nate.com">nate.con</option>
+                        <option value="google.com">google.com</option>
+                    </select>
+                    <label><input type="checkbox" value="Y" name="m_email">정보/이벤트 메일 수신에 동의합니다.</label>
+                </li>
+                <li>연락처</li><li><input type="text" name="m_usertel" maxlength="11"><p>※ "-" 없이 입력하세요.</p><label><input type="checkbox" value="Y" name="m_sms">정보/이벤트 SMS 수신에 동의합니다.</label></li>
+                <li>주소</li>
+                <li>
+                    <input type="text" name="m_post" class="postcodify_postcode5" readonly><div id="addpost">우편번호 검색</div>
+                    <input type="text" name="m_road" class="postcodify_address" readonly>
+                    <input type="text" name="m_addr">
+                </li>
+            </ul>
+            <label>
+                <div onclick="memberFn()" class="memberBtn1">회원가입</div>
+                <div onclick="memberCancel()" class="memberBtn1 memberBtn2">가입취소</div>
+            </label>
+        </div>
+    </form> 
+</div>
+<script src="./js/user_member.js?v=5"></script>
+<script src="//d1p7wdleee1q2z.cloudfront.net/post/search.min.js"></script>

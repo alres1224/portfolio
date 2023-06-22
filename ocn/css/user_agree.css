@@ -1,0 +1,101 @@
+@charset "UTF-8";
+.agreeBase{
+    width: 1200px;
+    padding: 40px 50px 0 50px;
+    box-sizing: border-box;
+    height: auto;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*MEMBER-SHIP 라인*/
+.agreeBase > span {
+    width: 1100px;
+    height: 60px;
+}
+.agreeBase > span > p{
+    width: 120px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: 700;
+    float: left;
+}
+.agreeBase > span > ul{
+    width: 360px;
+    height: auto;
+    float: right;
+}
+.agreeBase > span > ul > li{
+    width: 100px;
+    height: inherit;
+    float: left;
+    line-height: 60px;
+    text-align: center;
+    font-size: 13px;
+}
+.agreeBase > span > ul > li:first-of-type{
+    color: #F6C757;
+}
+.agreeBase > span > ul > li:nth-of-type(even){
+    width: 30px;
+}
+
+/*약관 동의 ~ 약관 출력 라인*/
+.agreeBase > form > div{
+    width: 1100px;
+    height: 555px;
+    padding: 30px 20px 25px 20px;
+    border-top: 1px solid #FFA500;
+    box-sizing: border-box;
+}
+.agreeBase > form > div > ul{
+    width: 1060px;
+    height: auto;
+    margin-bottom: 25px;
+}
+.agreeBase > form > div > ul > li {
+    width: inherit;
+    line-height: 30px;
+    font-size: 13px;
+}
+.agreeBase > form > div > ul > li > label >input{
+    width: 20px;
+    height: 20px;
+    vertical-align: -5px;
+}
+.agreeBase > form > div > ul > li:first-of-type {
+    height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.agreeBase > form > div > ul > li > label > em{
+    display: inline;
+    color: red;
+}
+.agreeBase > form > div > ul > li:nth-of-type(4), .agreeBase > div > ul > li:nth-of-type(6){
+    height: 150px;
+}
+.agreeBase > form > div > ul > li:nth-of-type(4) > label, .agreeBase > form > div > ul > li:nth-of-type(6) > label{
+    width: 1060px;
+    height: 150px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    overflow-y: auto;
+    font-size: 12px;
+}
+/*다음 단계 버튼*/
+.agreeBase > form > div > label{
+    width: 150px;
+    height: 45px;
+    color: white;
+    background-color: #F8B923;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+}

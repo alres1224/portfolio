@@ -1,0 +1,188 @@
+@charset "UTF-8";
+.loginBase{
+    width: 1200px;
+    padding: 40px 50px 0 50px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    margin: 0 auto;
+}
+.loginBase > form > span{
+    width: 1100px;
+    height: 60px;
+    border-bottom: 1px solid #FFA500;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+/* 로그인 파트 */
+.login{
+    width: 602px;
+    height: 222px;
+    border: 1px solid #F8B923;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 45px;
+}
+/*로그인 입력 파트*/
+.login > div{
+    width: 560px;
+    height: 90px;
+}
+.login > div > ul{
+    width: 400px;
+    height: inherit;
+    float: left;
+}
+.login > div > ul > li{
+    margin: 0 15px 10px 0;
+    line-height: 40px;
+    float: left;
+}
+.login > div > ul > li:nth-of-type(odd){
+    width: 150px;
+    height:40px;
+    background-color: #F8B923;
+    text-indent: 5px;
+    border-radius: 5px 0 0 0;
+}
+.login > div > ul > li:nth-of-type(3){
+    border-radius: 0 0 0 5px;
+}
+.login > div > input{
+    float: left;
+    width: 160px;
+    height: 90px;
+    background-color: #F8B923;
+    line-height: 90px;
+    text-align: center;
+    border-radius : 0 5px 5px 0;
+    border: 0;
+    cursor: pointer;
+}
+.login > div > ul > li:nth-of-type(even){
+    width: 220px;
+}
+.login > div > ul > li:nth-of-type(even) > input{
+    width: inherit;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid #F8B923;
+    border-radius: 3px;
+    text-indent: 5px;
+}
+/*자동 로그인 체크박스 파트*/
+.login > span{
+    width:560px;
+    height: 45px;
+    padding: 10px 0 10px 0;
+    box-sizing: border-box;
+}
+.login > span > label > input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    vertical-align: -5px;
+}
+/*회원가입, 아이디 찾기, 비밀번호 찾기 버튼*/
+.login > label{
+    width: 526px;
+    height: 45px;
+    margin: 0 auto;
+}
+.login > label > div{
+    width: 150px;
+    height: 45px;
+    border: 1px solid #666;
+    float: left;
+    margin-left : 36px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.login > label > div:first-of-type{
+    border:0;
+    margin:0;
+    background-color: #666;
+    color: white;
+}
+
+/*비회원 파트*/
+.nologin{
+    width: 602px;
+    height: 197px;
+    border: 1px solid #F8B923;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    margin-bottom: 45px;
+}
+/*비회원 결제내역 문구*/
+.nologin > div{
+    width: 560px;
+    height: 130px;
+}
+.nologin > div > label{
+    width: 560px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+/*결제자명, 주문번호 입력 파트*/
+.nologin > div > ul{
+    width: 400px;
+    height: 100px;
+    float: left;
+}
+.nologin > div > ul > li{
+    margin: 0 15px 10px 0;
+    line-height: 40px;
+    float: left;
+}
+.nologin > div > ul > li:nth-of-type(odd){
+    width: 150px;
+    height:40px;
+    background-color: #F8B923;
+    text-indent: 5px;
+    border-radius: 5px 0 0 0;
+}
+.nologin > div > ul > li:nth-of-type(3){
+    border-radius: 0 0 0 5px;
+}
+.nologin > div > input{
+    float: left;
+    width: 160px;
+    height: 90px;
+    background-color: #F8B923;
+    line-height: 90px;
+    text-align: center;
+    border-radius : 0 5px 5px 0;
+    border: 0;
+    cursor: pointer;
+}
+.nologin > div > ul > li:nth-of-type(even){
+    width: 220px;
+}
+.nologin > div > ul > li:nth-of-type(even) > input{
+    width: inherit;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid #F8B923;
+    border-radius: 3px;
+    text-indent: 5px;
+}
+/*비회원 결제 조회 하단 문구*/
+.nologin > span{
+    width: 560px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}

@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+.onair{
+    height: 450px;
+}
+.onair > div{
+    width: 1200px;
+    height: inherit;
+    margin: 0 auto;
+}
+
+/*최신 동영상 파트*/
+.movie{
+    width: 900px;
+    height: 450px;
+    float: left;
+    position: relative;
+}
+.movie > label{
+    width: inheirt;
+    height: 37px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 37px;
+    float: left;
+}
+.movie > span{
+    width: 100px;
+    height: 37px;
+    background-image: url("../contents/more.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 25px;
+    float: right;
+    cursor: pointer;
+}
+.movie > div {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 900px;
+    height: 413px;
+}
+.movie > div > ul{
+    width: 860px;
+    height: 373px;
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+.movie > div > ul:first-of-type{
+    display: block;
+    opacity: 1;
+}
+.movie > div > ul >li{
+    width: 200px;
+    height: 170px;
+    float: left;
+    margin: 0 19px 31px 0;
+    cursor: pointer;
+}
+.movie > div > ul > li > span{
+    width: 200px;
+    height: 170px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.movie > div > ul >li:nth-of-type(4), .movie > div > ul >li:last-of-type{
+    margin-right: 0;
+}
+/*광고 파트*/
+.airAd{
+    width: 280px;
+    height: 450px;
+    margin-left: 20px;
+    float: left;
+    background-image: url("../banner/ad_banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}

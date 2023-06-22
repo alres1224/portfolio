@@ -1,0 +1,33 @@
+[
+    {"main_menu":"OCN 스토리","menu_list":[
+         "OCN 스토리",
+         "OCN 매니페스토",
+         "OCN 히스토리",
+         "OCN 시청자 캠페인"
+        ],"menu_link":["https://ocn.cjenm.com/ko/OCN-Story/","https://ocn.cjenm.com/ko/OCN-Manifesto/","https://ocn.cjenm.com/ko/OCN-History/","https://ocn.cjenm.com/ko/OCN-Campaign/"]
+    },
+    {"main_menu":"OCN 편성표","menu_list":[
+         "OCN",
+         "OCN Movies",
+         "OCN Movies2"
+        ],"menu_link":["https://ocn.cjenm.com/ko/ocn-schedule/","https://ocn.cjenm.com/ko/ocn_movies-schedule/","https://ocn.cjenm.com/ko/ocn-movies2-schedule/"]
+    },
+    {"main_menu":"동영상","menu_list":[
+        "전체동영상"
+        ],"menu_link":["https://ocn.cjenm.com/ko/video/"]
+    },
+    {"main_menu":"OCN 블록","menu_list":[
+        "No1. Weekend",
+        "무비 플러스",
+        "비디오 리플레이",
+        "신작 사용설명서",
+        "O!K극장"
+        ],"menu_link":["https://ocn.cjenm.com/ko/no1weekend/","https://ocn.cjenm.com/ko/moviesplus/","https://ocn.cjenm.com/ko/videoreplay/","https://ocn.cjenm.com/ko/new-movie-guide/","https://ocn.cjenm.com/ko/ok-theater/"]
+    },
+    {"main_menu":"OCN 오리지널","menu_list":[
+        "All",
+        "방영 프로그램",
+        "종영 프로그램"
+        ],"menu_link":["https://ocn.cjenm.com/ko/Programs/","https://ocn.cjenm.com/ko/Programs/?865=sortType%3DMC010207%26removeCacheYn%3DN%26repGenreCdList%3DALL%26pageNum%3D1%26searchTlviseStatCd%3DMC020864%26searchChnCd%3DALL","https://ocn.cjenm.com/ko/Programs/?865=sortType%3DMC010207%26removeCacheYn%3DN%26repGenreCdList%3DALL%26pageNum%3D1%26searchTlviseStatCd%3DMC020865%26searchChnCd%3DALL"]
+    }
+]

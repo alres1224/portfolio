@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.ad{
+    height: 140px;
+    clear: both;
+    margin-bottom: 20px;
+}
+.ad > div{
+    width: 1200px;
+    height: 140px;
+    margin: 0 auto;
+}
+.ad > div > span{
+    width: 1200px;
+    height: 120px;
+    background-image: url("../banner/middlebanner.png");
+    background-repeat: no-repeat;
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+}

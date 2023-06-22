@@ -1,0 +1,8 @@
+{
+    "banners":[
+        ["./banner/banner_01.jpg","https://ocn.cjenm.com/ko/Programs/","1","yes"],
+        ["./banner/banner_02.jpg","https://ocn.cjenm.com/ko/ocine/","2","yes"],
+        ["./banner/banner_03.jpg","https://ocn.cjenm.com/ko/svu24/","3","yes"],
+        ["./banner/banner_04.jpg","https://ocn.cjenm.com/ko/asuperiorday/","4","yes"]
+    ]
+}

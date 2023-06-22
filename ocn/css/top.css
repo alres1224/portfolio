@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+header{
+    height: 35px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.top{
+    width: 1200px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+/*tiving 로고 css*/
+.top > img{
+    width: 80px;
+    height: inherit;
+    float: left;
+}
+.top > ul{
+    float: right;
+    font-size: 14px;
+}
+.top > ul > li{
+    float: left;
+    margin-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    cursor: pointer;
+}
+.top > ul > li:first-child{
+    margin: 0;
+}
+.login > span{
+    display: inline-block;
+}

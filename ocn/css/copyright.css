@@ -1,0 +1,109 @@
+@charset "UTF-8";
+footer{
+    height: 155px;
+    border-top: 1px solid black;
+}
+footer > div{
+    width: 1200px;
+    height: 155px;
+    margin: 0 auto;
+}
+.copyTop{
+    width: inherit;
+    height: 45px;
+    position: relative;
+}
+/*공지사항 파트*/
+.copyTop > div{
+    width: 720px;
+    height: 45px;
+    float: left;
+}
+.copyTop > div > span:first-of-type{
+    width: 100px;
+    height: inherit;
+    line-height: 45px; 
+    text-align: center;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+}
+.copyTop > div > span:nth-of-type(2){
+    width: 620px;
+    height: inherit;
+    font-size: 13px;
+    color: #9F9F9F;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.copyTop > div > span:nth-of-type(2) > ul{
+    width: 620px;
+    height: inherit;
+    position: absolute;
+}
+.copyTop > div > span:nth-of-type(2) > ul > li{
+    width: inherit;
+    height: inherit;
+    line-height: 45px;
+}
+/*메뉴 파트*/
+.copyTop > label{
+    width: 345px;
+    height: 45px;
+    float: right;
+    cursor: pointer;
+}
+.copyTop > label > span:nth-of-type(1), .copyTop > label > span:nth-of-type(2){
+    width: 170px;
+    height: 35px;
+    margin: 5px 0 5px 0;
+    border: 1px solid black;
+    box-sizing: border-box;
+    float: left;
+    font-size: 13px;
+    line-height: 35px;
+    text-indent: 5px;
+}
+.copyTop > label > span > em{
+    float: right;
+    width: 25px;
+    text-align: center;
+}
+.copyTop > label > span:nth-of-type(1){
+    margin-right: 5px;
+}
+.copyTop > label > span > ul{
+    width: 170px;
+    position: absolute;
+    margin-left: -1px;
+    bottom: 41px;
+    height: 0;
+    overflow: hidden;
+}
+.copyTop > label > span > ul >li{
+    width: 168px;
+    height: 35px;
+    background-color: white;
+    line-height: 35px;
+    font-size: 13px;
+    text-indent: 5px;
+}
+.copyTop > label > span > ul >li:hover{
+    font-weight: 700;
+}
+/*회사 정보 파트*/
+.copyBottom{
+    width: inherit;
+    height: 110px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #ccc;
+    line-height: 33px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.copyBottom > a{
+    display: inline;
+    cursor: pointer;
+}

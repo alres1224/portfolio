@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+.week{
+    height: 150px;
+}
+.week > div{
+    width: 1200px;
+    height: inherit;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+    box-sizing: border-box;
+}
+.week > div > div{
+    background-image: url("../contents/week_part.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 130px;
+    float: left;
+}
+
+/*영화 포스터 출력 파트*/
+.week > div > ul{
+    width: 1050px;
+    height: 130px;
+    float: left;
+}
+.week > div > ul > li{
+    width: 210px;
+    height: 130px;
+    float: left;
+    background-color: cornflowerblue;
+    position: relative;
+}
+.week > div > ul > li > span:first-of-type{
+    width: 210px;
+    height: 130px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.week > div > ul > li > span > label{
+    width: 210px;
+    height: 30px;
+    background-color: #000000;
+    color: #fce207;
+    font-size: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}

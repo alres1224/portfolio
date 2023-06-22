@@ -1,0 +1,49 @@
+<?php 
+    include "./dbinfo.php";
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCN - 대한민국  NO.1 채널</title>
+    <link rel="stylesheet" type="text/css" href="../default.css">
+    <link rel="stylesheet" type="text/css" href="../font.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css?v=17">
+    <link rel="shortcut icon" type="image/x-icon" href="./ico/favicon.ico">
+</head>
+<!-- 
+    기획서
+    http://mekeyace.dothome.co.kr/ocn_pt.pdf
+-->
+<body>
+<!--상단-->  
+<header><?php include "./top.html" ?></header>
+
+<!--메뉴-->
+<nav><?php include "./menu.html" ?></nav>
+
+<main>
+    <!--배너-->
+    <section class="banner"><?php include "./banner.html" ?></section>
+    <!--weekday-->
+    <section class="week"><?php include "./week.html" ?></section>
+    <!--최신 동영상-->
+    <section class="onair"><?php include "./onair.html" ?></section>
+    <!--ad 배너-->
+    <aside class="ad"><?php include "./ad.html" ?></aside>
+    <!--new contents-->
+    <section class="new"><?php include "./new_content.html" ?></section>
+</main>
+
+<!--copyright & 공지사항-->
+<footer><?php include "./copyright.html" ?></footer>
+</body>
+<script src="./js/menu.js?v=3"></script>
+<script src="./js/banner.js?v=7"></script>
+<script src="./js/week.js?v=1"></script>
+<script src="./js/onair.js?v=2"></script>
+<script src="./js/ad.js?v=2"></script>
+<script src="./js/new_content.js?v=1"></script>
+</html>

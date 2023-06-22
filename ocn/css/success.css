@@ -1,0 +1,58 @@
+.scsBase{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 50px 0 50px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+}
+.scsBase > span {
+    width: 1100px;
+    height: 60px;
+    border-bottom: 1px solid #FFA500;
+    margin: 0 auto;
+}
+.scsBase > span > p{
+    width: 120px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: 700;
+    float: left;
+}
+.scsBase > span > ul{
+    width: 360px;
+    height: inherit;
+    float: right;
+}
+.scsBase > span > ul > li{
+    width: 100px;
+    height: inherit;
+    float: left;
+    line-height: 60px;
+    text-align: center;
+}
+.scsBase > span > ul > li:nth-of-type(5){
+    color: #F6C757;
+}
+.scsBase > span > ul > li:nth-of-type(even){
+    width: 30px;
+}
+/*회원가입완료 이미지*/
+.scs{
+    width: 400px;
+    height: 400px;
+    background-image: url("../images/membersuccess.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+.scs > span{
+    width: 120px;
+    height: 38px;
+    cursor: pointer;
+    position: relative;
+    top: 314px;
+    left: 50%;
+    margin-left: -60px;
+}
