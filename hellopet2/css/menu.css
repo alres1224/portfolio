@@ -1,0 +1,164 @@
+.ALL {
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 9998;
+    display: none;
+}
+*{
+    box-sizing: border-box;
+}
+.Cmenu_main {
+    width: 540px;
+    height: 617px;
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+}
+
+.Cmenu_left{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 14px;
+    position: absolute;
+    background-color: white;
+}
+
+.Cmenu_left > li {
+    margin-top: 20px;
+    position: relative;
+}
+.Cmenu_left > li:nth-of-type(1){
+    height: 30px;
+}
+.Cmenu_left > li:nth-of-type(1)  span {
+    float: left;
+    background-color: black;
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: inherit;
+    color: white;
+    line-height: 30px;
+}
+.Cright {
+    right: 0;
+}
+
+.Clogin {
+    display: none;
+}
+.Clogin > label {
+    float: left;
+    margin-left: 5px;
+}
+
+.Cmenu_left > li:nth-of-type(2){
+    width: 100%;
+    height: 60px;
+}
+.Cmenu_left > li:nth-of-type(2) > span {
+    width: 25%;
+    height: inherit;
+    float: left;
+    text-align: center;
+    line-height: 80px;
+}
+.Cmenu_left > li:nth-of-type(2) > span > label {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    position: relative;
+    cursor: pointer;
+    left: 50%;
+    margin-left: -30px;
+}
+
+.Cmenu_left > li:nth-of-type(2) > span:nth-of-type(1) > label{
+    background: url(../btn/mic.svg) no-repeat 19px 5px/ 20px;
+}
+.Cmenu_left > li:nth-of-type(2) > span:nth-of-type(2) > label{
+    background: url(../btn/help.svg) no-repeat 19px 5px/ 20px;
+}
+.Cmenu_left > li:nth-of-type(2) > span:nth-of-type(3) > label{
+    background: url(../btn/review.svg) no-repeat 19px 5px/ 20px;
+}
+.Cmenu_left > li:nth-of-type(2) > span:nth-of-type(4) > label{
+    background: url(../btn/faq.svg) no-repeat 19px 5px/ 20px;
+}
+
+.Cqst {
+    height: 155px;
+    margin: 0;
+}
+.Cqst > ul {
+    height: auto;
+    list-style : disc;
+    margin-left: 20px;
+}
+.Cqst > ul > li{
+    width: 100%;
+    height: 25px;
+}
+.Cqst > ul > li > span {
+    height: inherit;
+    line-height: 25px;
+    overflow: hidden;
+}
+.Cqst em {
+    font-style: normal;
+    float: right;
+    padding-right: 30px;
+} 
+
+.Cbank {
+    padding: 5px;
+    height: 60px;
+    font-size: 16px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+.Cbank > span {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+.Ccs {
+    height: 190px;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 13px;
+}
+.Ccs > li {
+    height: 20px;
+    font-size: 14px;
+}
+.Ccs > li:nth-of-type(1){
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+}
+.Ccs > li:nth-of-type(2){
+    height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.Ccs > li:last-of-type{
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 37px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background: url(../btn/headset.svg) no-repeat 45px / 20px;
+    text-align: center;
+    padding-left: 20px;
+    cursor: pointer;
+}
+

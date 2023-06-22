@@ -1,0 +1,95 @@
+@charset "UTF-8";
+.Rbest{
+    width : 100%;
+    height: auto;
+}
+.Rbesttop{
+    width: 100%;
+    height:120px;
+    padding : 20px 0 20px 0;
+    box-sizing: border-box;
+}
+.Rbesttop > div{
+    width: 200px;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+}
+.Rbesttop > div:first-of-type{
+    font-size: 18px;
+    line-height: 38px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/*상품 출력 파트*/
+.Rbest > ul {
+    width: 100%;
+    height: auto;
+}
+.Rbest > ul > li{
+    width: 100%;
+    min-height: 120px;
+    max-height: 150px;
+    background-color: rgb(236,234,234);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.Rbest > ul > li:last-of-type{
+    margin-bottom : 0;
+}
+.Rbest > ul > li >span{
+    background-repeat : no-repeat;
+    background-size: 90% 90%;
+    background-position: 50% 80%;
+    min-width: 110px;
+    max-width: 150px;
+    min-height: 110px;
+    max-height: 150px;
+    float: left;
+}
+.Rbest > ul > li > div{
+    float: left;
+    min-width: 220px;
+    max-width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.Rbest > ul > li > div > label:first-of-type{
+    font-size : 16px;
+    font-weight : bold;
+    margin-bottom: 10px;
+}
+.Rbest > ul > li > div > label:nth-of-type(2){
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+.Rbest > ul > li > div > label:last-of-type{
+    font-size: 14px;
+    font-weight : bold;
+}
+/*상품 출력 파트 종료*/
+
+/*하단 버튼*/
+.Rbest > span{
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    box-sizing: border-box;
+    display : flow-root;
+}
+.Rbest > span > div{
+    width: 90px;
+    height: 40px;
+    font-size: 14px;
+    background-color: rgb(230,230,230);
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 40px;
+}
+.Rbest > span > div:last-of-type{
+    float: right;
+}

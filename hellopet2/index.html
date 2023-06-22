@@ -1,0 +1,40 @@
+<?php
+    include "./session.php";
+    $v = date("Ymdhis");
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B조 모바일 페이지</title>
+    <script src="./js/jquert2.1.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/index.css?v=2">
+</head>
+<body>
+    <div class="ALL" id="ALL"></div>
+    <!--
+        로그인, 회원가입
+    -->
+    <aside><?php include "login.html" ?></aside>
+    <aside><?php include "join.html" ?></aside>
+    <!-- 340px~540px NotosansKR-->
+    <header><?php include "top.html" ?></header>
+    <nav><?php include "menu.html" ?></nav>
+    <aside><?php include "category.html" ?></aside>
+    <main style="position: relative;">
+        <section><?php include "search.html"?></section>
+        <section><?php include "banner.html" ?></section>
+        <section class="Ybanner"><?php include "eventbanner.html" ?></section>
+        <section>
+        <article class="Ynew_poduct"><?php include "new_product.html" ?></article>
+        <article><?php include "best_product.html" ?></article>
+        </section>
+        <section class="Yreview">
+            <?php include "review.html" ?>
+        </section>
+    </main>
+    <footer><?php include "copyright.html"?></footer>
+</body>
+</html>

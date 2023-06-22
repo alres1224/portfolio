@@ -1,0 +1,142 @@
+@charset "UTF-8";
+input[type=text],input[type=password]{
+    border-radius : 5px;
+    border: 1px solid gainsboro;
+    text-indent: 5px;
+}
+.Rjoin{
+    width: 100%;
+    height: 617px;
+    background-color: rgba(0,0,0, 0.3);
+    margin-top: 50px;
+    position: absolute;
+    z-index: 90001;
+    display:none;
+}
+
+.Rjbase{
+    margin: 0 auto;
+    width: 90%;
+    min-width: 320px;
+    max-width: 440px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    position: relative;
+}
+
+/* 상단 MEMBERJOIN과 닫기 버튼 */
+.Rjbase > span {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.Rjbase > div{
+    background-color: black;
+    color: white;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 27px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* 동의 체크박스 파트 */
+.Rbase > ul:first-of-type{
+    width: 100%;
+}
+.Rjbase > ul:first-of-type > li{
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.Rjbase > ul:first-of-type > li > div{
+    display: inline;
+}
+.Rjbase > ul:first-of-type > li > label > input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    display:inline;
+    vertical-align: -4px;
+}
+
+/* 고객 정보 입력 파트 */
+.Rjul2{
+    width: 100%
+}
+.Rjul2 > li{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.Rjul2 > li > input{
+    height: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 280px;
+    max-width: 400px;
+    font-size: 16px;
+}
+.Rjul2 > li:first-child > div:first-child{
+    width: calc(100% - 120px);
+    min-width: 160px;
+    max-width: 300px;
+    height: 40px;
+    float: left;
+}
+.Rjul2 > li > div > input[type=text]{
+    width :100%;
+    height: 40px;
+    float: left;
+    font-size: 16px;
+}
+.Rjul2 > li:first-of-type > div:nth-of-type(2){
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+    background-color: rgb(94,94,94);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    font-size: 16px;
+}
+
+/*보안코드 입력 파트*/
+.Rjbase > ol{
+    width: 100%;
+}
+.Rjbase > ol > li {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.Rjbase > ol > li > input{
+    height: 40px;
+    width: 100%;
+}
+.Rjbase > ol > li:nth-of-type(2) > input{
+    background-color: rgb(227, 227, 227);
+    margin: 0;
+    padding: 0;
+}
+
+/* 회원가입 버튼 */
+.Rjbase > label{
+    width: 100%;
+    min-width: 280px;
+    max-height: 400px;
+    background-color: rgb(94,94,94);
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+}

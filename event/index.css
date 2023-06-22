@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* 상단 메뉴 */
+header{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+}
+.topmenu{
+    width: 1200px;
+    height: inherit;
+    margin: 0 auto;
+}
+.logo{
+    width: 250px;
+    height: inherit;
+    position: absolute;
+}
+.logocss{
+    width: 120px;
+    height: 60px;
+    object-fit: contain;
+    top: 20px;
+    position: absolute;
+    cursor: pointer;
+}
+.topmenu > ul{
+    float: right;
+    width: 600px;
+    height: 100px;
+}
+.topmenu > ul > li{
+    float : left;
+    width: 100px;
+    height: inherit;
+    line-height: 100px;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.topmenu > ul > li:hover{
+    color: red;
+}
+.topmenu > ul > li:nth-of-type(5){
+    color: red;
+}
+.topmenu > ul > li:nth-of-type(5):hover{
+    color: crimson;
+}
+/*상단 메뉴 종료 */
+
+/* 이벤트 */
+.event{
+    max-width: 1920px;
+    height: 1080px;
+    position: relative;
+    background-color: black;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.ad{
+    max-width: 1920px;
+    height: 1080px;
+    position: absolute;
+    top: -42px;
+}
+.event > form > div{
+    width: 800px;
+    height: 780px;
+    position: absolute;
+    z-index: 1;
+    top: 105px;
+    left: 50%;
+    margin-left: -400px;
+    padding: 40px 50px 40px 50px;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 20px;
+}
+.event > form > div > span{
+    width: 700px;
+    height: 700px;    
+}
+.event > form > div > span > ul{
+    width: inherit;
+    height: auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+.event > form > div > span > ul > li{
+    width: inherit;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.event > form > div > span > ul > li:first-of-type{
+    height: 370px;
+}
+.event > form > div > span > ul > li:first-of-type > img{
+    width: 50%;
+    object-fit: contain;
+}
+.event > form > div > span > ul > li:last-child{
+    margin-bottom: 0;
+}
+.event > form > div > span > ul > li > input {
+    width: 700px;
+    height: 50px;
+    border-radius : 15px;
+    border: 1px solid #2D77F5;
+    text-indent: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: rgba(255,255,255,0.8);
+}
+.event > form > div > span > ul > li:nth-of-type(6){
+    text-align: left;
+    line-height: 50px;
+}
+.event > form > div > span > ul > li:nth-of-type(6) > label > input{
+    vertical-align: -2px;
+    width: 15px;
+    height: 15px;
+}
+.btn{
+    width: inherit;
+    height:inherit;
+    background-color:#2D77F5;
+    border-radius: 10px;
+    color: white;
+    line-height: 50px;
+    cursor: pointer;
+}
+/* 이벤트 종료 */
+
+/* 카피라이터 */
+footer{
+    width: 100%;
+    height: 190px;
+    background-color: #ccc;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 13px;
+}
+footer > div{
+    width: 1200px;
+    height: inherit;
+    margin: 0 auto;
+}
+footer > div > ul{
+    width: inherit;
+    height: 60px;
+    font-weight: 400;
+    border-bottom: 1px solid gray;
+    box-sizing: border-box;
+}
+footer > div > span{
+    width: inherit;
+    height: 130px;
+    padding: 15px 0 15px 0;
+    box-sizing: border-box;
+}
+footer > div > span > p{
+    line-height: 25px;
+}
+footer > div > span > p > a{
+    display: inline;
+    cursor: pointer;
+}
+footer > div > ul >li{
+    float: left;
+    width: 100px;
+    height: inherit;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+footer > div > ul > li:nth-of-type(4){
+    width: 200px;
+}
+footer > div > ul > li:nth-of-type(6){
+    font-weight: 700;
+}
+footer > div > ul > li:nth-of-type(6), footer > div > ul > li:nth-of-type(8){
+    width: 150px;
+}
+/* 카피라이터 종료 */

@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="./css/join.css?v=<?php echo $v?>">
+<form id="Rform" method="post" action="./id_search.php" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="m_security" value="hellopet">
+<div class="Rjoin"  id="Rjbase">
+    <div class="Rjbase">
+        <span>
+            MEMBER JOIN
+        </span>
+        <div onclick="Rjclose()">X</div>
+        <ul>
+            <li><label><input type="checkbox" onclick="Rckall(this.checked)">전체동의</label></li>
+            <li><label><input type="checkbox" name="agree1" value="Y">서비스 약관에 동의</label></li>
+            <li><label><input type="checkbox" name="agree2" value="Y">이메일 정책 약관에 동의</label></li>
+            <li><label><input type="checkbox" name="agree3" value="Y">개인정보처리 약관에 동의</label></li>
+        </ul>
+        <ul class="Rjul2">
+            <li>
+                <div>
+                    <input type="text" placeholder="아이디를 입력하세요." name="m_id">
+                </div>
+                <div onclick="Rjbtn()">중복체크</div>
+            </li>
+            <li><input type="text" placeholder="고객명을 입력하세요." name="m_name"></li>
+            <li><input type="password" placeholder="패스워드를 입력하세요.(최소 5자 이상)" name="m_passwd"></li>
+            <li><input type="password" id="Rpwck" placeholder="동일한 패스워드를 입력하세요."></li>
+            <li><input type="text" placeholder="연락처를 입력하세요. '-' 미포함" maxlength="11" name="m_hp"></li>
+            <li><input type="text" placeholder="이메일 주소를 입력하세요." name="m_email"></li>
+        </ul>
+        <ol>
+            <li>보안코드 번호</li>
+            <li><input type="text" id="Rsecurity" readonly></li>
+            <li><input type="text" id="Rsc" placeholder="보안코드 6자리를 입력하세요." maxlength="6"></li>
+        </ol>
+        <label onclick="Rjreg()">회원가입</label>
+    </div>
+</div>
+</form>
+<script src="./js/join.js?v=<?php echo $v?>"></script>

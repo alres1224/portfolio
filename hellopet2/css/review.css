@@ -1,0 +1,76 @@
+@charset "uft-8";
+.Yintro{
+    width: 100%;
+    height: 150px;
+}
+.Yintro {
+    background-image: url(../intro/intro_01.jpg);
+    background-size: 100% 100%;
+}
+.YintroMenu{
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+}
+.YintroMenu > li{
+    width: 13%;
+    height: 50px;
+    float: left;
+    margin-left: 6%;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.YintroMenu > li > a > img{
+    width: 100%;
+    height: 100%;
+}
+.Yreview{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.YreviewMenu{
+    width: 100%;
+    height: 40px;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color:rgb(230, 230, 230);
+    margin-top: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.YreviewMenu > div{
+    height: 40px;
+    float: left;
+}
+.YreviewMenu > div:nth-child(1){
+    width: 16.5%;
+    line-height: 40px;
+}
+.YreviewMenu > div:nth-child(2){
+    width: 75%;
+    line-height: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+.YuserReview{
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+.YuserReview > li{
+    height: 40px;
+    text-indent: 10px;
+}
+.YreviewMenu > div:nth-child(3){
+    width: 8.5%;
+    height: 20px;
+    line-height: 10px;
+    background-color: rgb(127, 127, 127);
+    text-align: center;
+    color: white;
+    margin-top: 2%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

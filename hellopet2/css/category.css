@@ -1,0 +1,14 @@
+.j_category{
+    width: 100%;
+    height: 80px;
+}
+.j_categorymain{
+    width: 100%;
+    height: 80px;
+}
+.j_categorymain > tbody > tr > td{
+    text-align: center;
+    height: 40px;
+    box-sizing: border-box;
+    width: 33%;
+}

@@ -1,0 +1,71 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="./css/menu.css?v=<?php echo $v?>">
+
+<section class="Cmenu_main" id="Cmenu_main">
+    <ul class="Cmenu_left">
+        <li>
+            <span class="Clogout" id="Cloginbtn">로그인</span>
+            <span class="Clogout Cright" id="Cjoinbtn">회원가입</span>
+            <div class="Clogin" id="Clogin">
+                <label id="Cusername"></label>
+                <label> 님 환영합니다.</label>
+            </div>
+            <form id="Cfm" method="post" action="./m_logout.php" enctype="application/x-www-form-urlencoded">
+                <span class="Clogin Cright" id="Clogoutbtn">로그아웃</span>
+            </form>
+        </li>
+        <li>
+            <span>
+                <label class="Csvg1">공지</label>
+            </span>
+            <span>
+                <label class="Csvg2">문의</label>
+            </span>
+            <span>
+                <label class="Csvg3">후기</label>
+            </span>
+            <span>
+                <label class="Csvg4">FAQ</label>
+            </span>
+        </li>
+        <li>
+            <fieldset class="Cqst">
+                <legend>질문내역</legend>
+                <ul id="Cqst">
+                </ul>
+            </fieldset>
+        </li>
+        <li class="Cbank">
+            <span>ACCOUNT NO.012-23-123456 [국민은행] </span>
+            <span>예금주:(주)헬로우펫</span>
+        </li>
+        <li>
+            <ul class="Ccs">
+                <li>CS CENTER</li>
+                <li>070-2021-0630</li>
+                <li>MON-FRI AM09:00 ~ PM06:00</li>
+                <li>LUNCH 12:00 - 13:00</li>
+                <li>SAT,SUN,HOLIDAY OFF</li>
+                <li><a href="tel:02-0000-0101">고객센터 연결</a></li>
+            </ul>
+        </li>
+    </ul>
+    <!-- <div class="Cmenu_right"></div> -->
+</section>
+<script src="./js/menu.js?v=<?php echo $v?>"></script>
+<script>
+    var name = "<?php echo $mname ?>";
+    var Uname = document.getElementById("Cusername");
+    var Cloginbtn = document.getElementById("Cloginbtn");
+    var Cjoinbtn = document.getElementById("Cjoinbtn");
+    var Clogin = document.getElementById("Clogin");
+    var Clogoutbtn = document.getElementById("Clogoutbtn");
+    if(name != ""){
+        Cloginbtn.style.display = "none";
+        Cjoinbtn.style.display = "none";
+        Clogin.style.display = "block";
+        Clogoutbtn.style.display = "block";
+        Uname.append(name);
+    }
+    
+</script>

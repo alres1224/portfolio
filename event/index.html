@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 인트로 이벤트 페이지(CGV)</title>
+    <link rel="stylesheet" type="text/css" href="./index.css?v=20230303_4">
+    <link rel="stylesheet" type="text/css" href="../default.css?v=20230303_1">
+    <link rel="stylesheet" type="text/css" href="../font.css?v=20230303_1">
+</head>
+<body>
+    <!--로고 & 메뉴-->
+    <header>
+        <nav class="topmenu">
+            <div class="logo">
+                <img src="./image/logo.png" class="logocss" onclick="cgv_main()">
+            </div>
+            <ul id="menulist"></ul>
+        </nav>
+    </header>
+    <!--이벤트 참여 파트 부분 및 영상 출력 파트-->
+    <section class="event clear">
+        <form id="frm" method="post" action="http://reduck.dothome.co.kr/avt_event.php">
+        <div>
+            <span>
+                <ul>
+                    <li><img src="./image/avt.png"></li>
+                    <li><input type=text name="event_user" placeholder="이벤트 참여자 이름을 입력하세요"></li>
+                    <li><input type=text name="event_email" placeholder="이메일 주소를 입력하세요"></li>
+                    <li><input type=text name="event_tel" placeholder="휴대폰 번호를 입력하세요 '-'는 미포함" maxlength="11"></li>
+                    <li><input type=text  name="event_number" placeholder="티켓 번호를 입력해주세요" maxlength="8"></li>
+                    <li><label><input type="checkbox" name="event_check" value="yes"><a href="javascript:term()"><u>이용약관</u></a>에 따른 정보제공에 동의함</label></li>
+                    <li><div class="btn" onclick="event_()">이벤트 참여하기</div></li>
+                </ul>
+            </span>
+        </div>
+        </form>
+        <video class="ad" muted autoplay loop>
+            <source src="./image/intro.mp4" type="video/mp4">
+        </video>
+        <!--카피라이터-->
+        <footer>
+            <div>
+                <ul id="copyright"></ul>
+                <span class="clear">
+                <p>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층</p>
+                <p>대표이사 : 허민회  사업등록번호 : 104-81-45690 <a href="javascript:corp('1048145690')">[사업자정보확인]</a> 통신판매업신고번호 : 2017-서울용산-0662</p>
+                <p>호스팅사업자 : CJ올리브네트웍스 개인정보보호 책임자 : 김용림 대표이메일 : nighthawks1224@icloud.com</p>
+                <p>ⓒ CJ CGV. All Rights Reserved</p>
+                </span>
+            </div>
+        </footer>
+    </section>
+</body>
+<script src="./index.js?v=20230303_2"></script>
+</html>

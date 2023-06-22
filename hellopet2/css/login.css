@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    max-width: 540px;
+    min-width: 340px;
+}
+.J_loginback{
+    top: 50px;
+    background-color: rgba(0,0,0, 0.3);
+    height: 617px;
+    display: none;
+    position: absolute;
+    z-index: 90000;
+}
+input[type=text],input[type=password]{
+    border-radius : 5px;
+    border: 1px solid gainsboro;
+}
+.J_login{
+    width: 90%;
+    max-width: 440px;
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+}
+.J_x{
+    float: right;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    background-color: black;
+    font-size: 27px;
+    font-weight: 500;
+    text-align: center;
+}
+.J_loginmain{
+    max-width: 440px;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.J_loginmain > li:nth-of-type(1){
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.J_loginmain > li:nth-of-type(2){
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.J_loginid{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    text-indent: 5px;
+}
+.J_loginck{
+    padding-top: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.J_loginckkk{
+    vertical-align: -3px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+.J_loginmain > li:nth-of-type(5){
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: rgb(243, 156, 18);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.J_loginmain > li:nth-of-type(6){
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color:rgb(224, 224, 224) ;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.J_loginmain > li:nth-of-type(7){
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color:  rgb(224, 224, 224) ;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}

@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="./css/login.css?v=<?php echo $v?>">
+
+<form action="./m_login.php" method="post" id="J_logingoo" enctype="application/x-www-form-urlencoded">
+    <input type="hidden" name="m_key" value="mobiles">
+    <div class="J_loginback">
+        <div class="J_login">
+            <span class="J_x" id="J_x">X</span>
+            <ol class="J_loginmain">
+                <li>MEMBER LOGIN</li>
+                <li><input type="text" class="J_loginid" name="m_id" placeholder="아이디를 입력하세요." id="m_id"></li>
+                <li><input type="password" class="J_loginid" name="m_pw" placeholder="패스워드를 입력하세요." id="m_pw"></li>
+                <li>
+                    <label id="J_loginck" class="J_loginck">
+                        <input type="checkbox" class="J_loginckkk" id="autock">아이디 저장
+                    </label>
+                </li>
+                <li id="J_logingo">LOGIN</li>
+                <li id="J_zz">회원가입</li>
+                <li id="J_join">아이디 / 비밀번호 찾기</li>
+            </ol>
+        </div>
+    </div>
+</form>
+<script src="./js/login.js?v=<?php echo $v?>"></script>
+<script>
+    var mid = localStorage.getItem("userid");
+    var autock = document.getElementById("autock");
+    var m_id = document.getElementById("m_id");
+    if(mid != null){
+        m_id.value = mid;
+        autock.checked = true;
+    }
+
+</script>
