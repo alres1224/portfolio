@@ -1,0 +1,162 @@
+@charset "UTF-8";
+.loginBase{
+	width: 1200px;
+	margin: 0 auto;
+}
+.loginUl{
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 16px;
+}
+.loginBody > li{
+	width: 400px;
+	height: 48px;
+	line-height: 48px;
+	margin: 0 auto;
+}
+
+/* 최상단 로그인 글자 */
+.loginBody > li:first-of-type{
+	font-family: 'IBM Plex Sans KR';
+	font-size: 40px;
+	font-weight: bold;
+	height: 120px;
+	text-decoration: underline;
+	line-height: 120px;
+}
+
+/* 간편 로그인 안내 */
+.loginBody > li:nth-of-type(2){
+	height: 50px;
+	line-height: 50px;
+	color: #BDBDBD;
+}
+
+/* 로그인, 비밀번호 입력 부분 */
+.loginBody > li:nth-of-type(3), .loginBody > li:nth-of-type(4){
+	margin-bottom: 5px;
+}
+.loginBody > li > input{
+	width: inherit;
+	height: inherit;
+	border: 3px solid #BDBDBD;
+	border-radius: 4px;
+	text-indent: 10px;
+	font-size: 16px;
+}
+
+/* 로그인 버튼 */
+.loginBtn{
+	width: inherit;
+	height: inherit;
+	color: white;
+	background-color: #4F84F5;
+	text-align: center;
+	line-height: 48px;
+	border-radius: 4px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.loginBtn:hover{
+	font-weight: bold;
+}
+
+
+/* .loginFind 시작 : 찾기 부분*/
+.loginFind{
+	width: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	color: #BDBDBD;
+}
+.loginFind > li{
+	height: 48px;
+	line-height: 48px;
+	position: relative;
+	cursor: pointer;
+}
+.loginFind > li::after{
+	content: "|";
+	position: absolute;
+	right: -24px;
+}
+.loginFind > li:last-of-type:after{
+	content:"";
+}
+/* .loginFind 끝 */
+
+/* 간편 로그인 글자 파트 시작 */
+.loginText{
+	width: 400px;
+	height: 48px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	line-height: 48px;
+}
+.loginText > li{
+	width: 130px;
+}
+.loginText > li::before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: black;
+	position: relative;
+	top: calc(50% + 1px);
+}
+.loginText > li:nth-of-type(2):before{
+	display: none;
+}
+/* 간편 로그인 글자 파트 끝 */
+
+/* 간편 로그인 아이콘 파트 시작 */
+.loginIcons{
+	width: 400px;
+	height: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+	margin: 5px auto;
+}
+.loginIcons > span{
+	width: 80px;
+	height: inherit;
+	border-radius: 100%;
+	border: 1px solid #BDBDBD;
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	background-position: center;
+	cursor: pointer;
+}
+.loginIcons > span:nth-of-type(1){
+	background-image: url(../ico/icon-kakao.png);
+}
+.loginIcons > span:nth-of-type(2){
+	background-image: url(../ico/icon-naver.png);
+}
+.loginIcons > span:nth-of-type(3){
+	background-image: url(../ico/icon-phone.png);
+}
+.loginIcons > span:nth-of-type(4){
+	background-image: url(../ico/icon-ipin.png);
+}
+.loginIcons > span:hover{
+	background-size: 45px 45px;
+}
+/* 간편 로그인 아이콘 파트 끝 */
+
+/* 회원가입 버튼 파트 시작 */
+.loginJoinBtn{
+	width: 400px;
+	height: 48px;
+	margin: 15px auto 0 auto;
+	border: 3px solid #4F84F5;
+	color: #4F84F5;
+	background-color: white;
+	line-height: 42px;
+}
+/* 회원가입 버튼 파트 끝 */

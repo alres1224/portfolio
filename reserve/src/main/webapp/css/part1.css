@@ -1,0 +1,160 @@
+@charset "UTF-8";
+.p1Base{
+	width: 1200px;
+	margin: 0 auto;
+}
+/* 최상단 야영장 예약하기 글자 시작 */
+.p1Text{
+	height: 50px;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: 'IBM Plex Sans KR';
+	text-decoration: underline;
+	margin: 60px 0;
+	text-align: center;
+}
+/* 최상단 야영장 예약하기 글자 끝 */
+
+/* 야영장 전체 리스트 출력 파트 시작 */
+#p1List{
+	margin-bottom: 60px;
+}
+#p1List > ul{
+	width: 800px;
+	height: 70px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+#p1List > ul > li{
+	width: 200px;
+	height: inherit;
+	line-height: 70px;
+	border: 1px solid #666;
+	border-bottom: 0;
+	border-right: 0;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+	color: #666;
+	font-size: 18px;
+	font-weight: 300;
+}
+#p1List > ul > li:last-of-type{
+	border-right: 1px solid #666;
+}
+#p1List > ul:last-of-type > li{
+	border-bottom: 1px solid #666;
+}
+#p1List > ul > li > span{
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	background-image: url(../ico/arrow.svg);
+	background-repeat: no-repeat;
+	background-size: 28px 28px;
+	background-position: center;
+	top: calc(50% - 14px);
+	right: 7px;
+	border: 1px solid #666;
+	border-radius: 2px;
+}
+/* 야영장 전체 리스트 출력 파트 끝 */
+
+/* 야영장 상세 리스트 출력 파트 시작 */
+#p1List > ol{
+	display: none;
+	width: 800px;
+	height: 70px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: #666;
+}
+#p1List > ol > li{
+	width: 100px;
+	height: 40px;
+	border-radius: 40px;
+	border: 1px solid black;
+	background-color: white;
+	color: black;
+	text-align: center;
+	line-height: 40px;
+	margin: 0 10px;
+	font-size: 18px;
+	font-weight: 300;
+	cursor: pointer;
+}
+/* 야영장 상세 리스트 출력 파트 끝 */
+/* 느낌표 아이콘 시작 */
+.p1Ico{
+	width: 35px;
+	height: 35px;
+	margin: 0 auto;
+	background-image: url("../ico/report.svg");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+/* 느낌표 아이콘 끝 */
+
+/* 문구 출력 파트 시작 */
+.p1Line{
+	font-size: 14px;
+	color: #BDBDBD;
+	text-align: center;
+}
+.p1Line > em{
+	font-style: normal;
+	color: black;
+	font-weight: 500;
+}
+/* 문구 출력 파트 끝 */
+
+/* 날짜 선택 파트 시작 */
+.p1Date{
+	margin-top: 60px;
+	display: none;
+}
+.p1Date > ul{
+	width: 610px;
+	height: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 14px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+.p1Date > ul > li:nth-of-type(odd){
+	width: 100px;
+	height: inherit;
+	text-align: center;
+	line-height: 30px;
+}
+.p1Date > ul  > li:nth-of-type(even){
+	width: 200px;
+	height: inherit;
+	margin-right: 10px;
+}
+.p1Date > ul  > li:nth-of-type(even) > input[type=date]{
+	width: 200px;
+	height: inherit;
+}
+.p1Date > ul  > li:last-of-type{
+	margin: 0;
+}
+.p1Date > div{
+	margin: 0 auto;
+	width: 250px;
+	height: 70px;
+	background-color: #1e1f21;
+	color: white;
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+	line-height: 70px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+/* 날짜 선택 파트 끝 */

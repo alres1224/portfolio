@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- NoticeVO를 통해 Database 필드 값을 로드하는 역할 -->
+<configuration>
+	<typeAliases>
+		<typeAlias alias="ReserveVO" type="reserve.ReserveVO"/>
+	</typeAliases>
+</configuration>

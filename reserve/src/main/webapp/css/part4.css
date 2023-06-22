@@ -1,0 +1,92 @@
+@charset "UTF-8";
+.p4Base{
+	width: 900px;
+	margin: 0 auto;
+}
+label{
+	display: inline-block;
+}
+/* 야영장 예약 확인 문구 파트 */
+.p4Top{
+	width: inherit;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: 'IBM Plex Sans KR';
+	text-decoration: underline;
+	margin: 60px 0;
+}
+
+/* 예약 번호 입력 부분 */
+.p4Code{
+	width: 900px;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 18px;
+	font-weight: 300;
+}
+.p4Code > li:first-of-type{
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid black;
+}
+.p4Code > li:nth-of-type(2){
+	width: 700px;
+	font-size: 14px;
+	color: #BDBDBD;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid black;
+}
+.p4Code > li:nth-of-type(2) > input[type=text]{
+	width: 250px;
+	height: 30px;
+	vertical-align: 1px;
+	border: 1px solid black;
+	box-sizing: border-box;
+	margin-right: 10px;
+	text-indent: 10px;
+}
+.p4Code > li:last-of-type{
+	width: inherit;
+	height: 70px;
+	margin-top: 10px;
+}
+.p4Code > li:last-of-type > div{
+	width: 250px;
+	height: inherit;
+	margin: 0 auto;
+	background-color: #1e1f21;
+	color: white;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 70px;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.p4Code > li:last-of-type > div:hover{
+	font-weight: bold;
+}
+
+.control{
+	display: none;
+}
+
+.cancelBtn{
+	width: 250px;
+	height: 70px;
+	line-height: 70px;
+	justify-content: center;
+	background-color: #1e1f21;
+	color: white;
+	font-size: 20px;
+	font-weight: 300;
+	margin: 0 auto;
+	border-radius: 4px;
+	margin-top: 60px;
+	cursor: pointer;
+}

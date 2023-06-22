@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* 'Noto Sans KR', sans-serif; 100, 300, 400, 500, 700, 900 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+/* font-family: 'IBM Plex Sans KR', sans-serif; 100 200 300 400 500 600 700 */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap");
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul, ol{
+	list-style: none;
+}
+
+span, label{
+	display: block;
+}

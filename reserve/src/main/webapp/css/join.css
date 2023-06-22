@@ -1,0 +1,138 @@
+@charset "UTF-8";
+.joinBase{
+	width: 800px;
+	margin: 0 auto;
+}
+
+/* 이용약관 등 상단 페이지 시작 */
+.joinTop{
+	width: inherit;
+	font-size: 16px;
+}
+.joinTop > li{
+	width: inherit;
+}
+.joinTop > li:first-of-type{
+	height: 120px;
+	line-height: 120px;
+	text-align: center;
+	font-family: 'IBM Plex Sans KR';
+	font-weight: 700;
+	font-size: 40px;
+	text-decoration: underline;
+}
+.joinTop > li:nth-of-type(2){
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #BDBDBD;
+}
+.join45{
+	height: 45px;
+	line-height: 45px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.join45 > em{
+	text-decoration: none;
+	font-style: normal;
+	float: right;
+	color: #BDBDBD;
+}
+/* 이용약관 출력 */
+.joinTop > li > span{
+	height: 180px;
+	border: 1px solid black;
+	overflow-y: auto;
+}
+/* 이용약관 동의 체크박스 */
+.joinTop > li:nth-of-type(6), .joinTop > li:nth-of-type(9){
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+}
+/* 이용약관 등 상단 페이지 끝 */
+
+/* 개인 정보 입력하는 하단 페이지 시작 */
+.joinBtm{
+	width: 800px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-size: 14px;
+	margin: 0 auto;
+}
+.joinBtm > li{
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 5px;
+}
+.joinBtm > li:nth-of-type(odd){
+	width: 200px;
+	background-color: #BAE9F4;
+	text-indent: 10px;	
+}
+.joinBtm > li:nth-of-type(even){
+	width: 590px;
+}
+/* 중복 버튼 */
+.joinBtm > li > div{
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	background-color: #4F84F5;
+	color: white;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+.joinBtm > li > div:hover{
+	font-weight: 500;
+}
+/* 입력용 input */
+.joinBtm input[type=text], .joinBtm input[type=password]{
+	width: 300px;
+	height: 40px;
+	border: 1px solid #4F84F5;
+	font-size: 14px;
+	text-indent: 10px;
+	margin-right: 10px;
+}
+.joinBtm > li:nth-of-type(12) > input[type=text]{
+	width: 400px;
+}
+/* 도움말 */
+.joinBtm em{
+	font-style: normal;
+	color: #BDBDBD;
+}
+/* 체크박스 */
+.joinBtm > li > label{
+	height: 35px;
+	margin-top: 2.5px;
+}
+.joinBtm input[type=checkbox]{
+	width: 35px;
+	height: 35px;
+	margin-right: 10px;
+	vertical-align: -10px;
+}
+/* 개인 정보 입력하는 하단 페이지 끝 */
+
+/* 회원가입완료 버튼 */
+.joinOk{
+	margin: 20px auto;
+	width: 400px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+	background-color: #4F84F5;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.joinOk:hover{
+	font-weight: bold;
+}
