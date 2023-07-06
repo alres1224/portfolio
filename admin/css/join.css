@@ -1,0 +1,168 @@
+@charset "UTF-8";
+.wrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+.joinBase{
+	width: 1100px;
+	margin: 0 auto;
+	font-size: 13px;
+}
+
+/* 'HOME > 회원가입 > 약관동의' 파트 시작 */
+.joinPath{
+	height: 16px;
+	line-height: 16px;
+	font-family: "Malgun Gothic","맑은 고딕","AppleGothic","Dotum","돋움",sans-serif;
+	font-size: 12px;
+}
+.joinPath > li::after{
+	content: "▶";
+	padding: 0 3px;
+}
+.joinPath > li:last-of-type::after{
+	content: "";
+}
+/* 'HOME > 회원가입 > 약관동의' 파트 끝 */
+
+/* 회원가입 큰글씨 파트 시작 */
+.joinName{
+	width: 1100px;
+	justify-content: space-between;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #ccc;
+	color: #333;
+	margin-bottom: 20px;
+}
+.joinName > span{
+	font-size: 27px;
+	font-weight: 700;
+}
+.joinName > ul{
+	font-size: 14px;
+	font-weight: 300;
+}
+.joinName > ul > li:nth-of-type(even){
+	padding: 0 10px;
+}
+.joinName > ul > li:nth-of-type(3){
+	font-weight: bold;
+}
+/* 회원가입 큰글씨 파트 끝 */
+
+.joinContainer{
+	width: 750px;
+	margin: 0 auto;
+}
+
+/* '기본정보'와 도움말 부분 시작 */
+.joinInfoTop{
+	width: inheirt;
+	height: 40px;
+	line-height: 40px;
+	justify-content: space-between;
+	border-bottom: 2px solid #ccc;
+}
+.joinInfoTop > li:last-of-type{
+	color: red;
+	font-family: "돋움체";
+	font-size: 12px;
+}
+/* '기본정보'와 도움말 부분 끝 */
+
+/* 회원 정보 입력 파트 시작 */
+.joinInfoBody{
+	width: inherit;
+	font-size: 14px;
+}
+.joinInfoBody > li {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #ccc;
+	text-indent: 10px;
+}
+.joinInfoBody > li:nth-of-type(odd){
+	width: 120px;
+	background-color: #fbfbfb;
+}
+.joinInfoBody > li:nth-of-type(even){
+	width: 630px;
+}
+.joinInfoBody > li:nth-of-type(9),.joinInfoBody > li:nth-of-type(10),.joinInfoBody > li:nth-of-type(11),.joinInfoBody > li:nth-of-type(12){
+	height: 100px;
+}
+.joinInfoBody > li:nth-of-type(15),.joinInfoBody > li:nth-of-type(16){
+	height: 150px;
+}
+.joinInfoBody input[type=text], .joinInfoBody input[type=password]{
+	text-indent: 10px;
+}
+.joinInfoBody input[type=text], .joinInfoBody input[type=password], .joinInfoBody select, .joinInfoBody button{
+	height: 35px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+}
+.joinInfoBody button{
+	width: 100px;
+	margin-left: 5px;
+}
+.joinInfoBody > li:nth-of-type(2) > input{
+	width: 350px;
+}
+.joinInfoBody > li:nth-of-type(4) > input, .joinInfoBody > li:nth-of-type(6) > input{
+	width: 200px;
+}
+.joinInfoBody > li:nth-of-type(8) > input{
+	width: 250px;
+}
+.joinInfoBody > li:nth-of-type(10) > select{
+	width: 100px;
+}
+.joinInfoBody > li:nth-of-type(14) > input{
+	width: 250px;
+}
+.joinInfoBody > li > ul > li{
+	margin-right: 5px;
+}
+.joinInfoBody > li > ul > li input[type=text]{
+	width: 250px;
+}
+.joinInfoBody > li > ul > li input[type=checkbox]{
+	margin-right: 5px;
+}
+.joinInfoBody > li > ul > li select{
+	width: 100px;
+}
+.joinInfoBody > li > ul > li label{
+	width: 600px;
+}
+.joinInfoBody > li:last-of-type > ul > li:nth-of-type(2) > input, .joinInfoBody > li:last-of-type > ul > li:nth-of-type(3) > input{
+	width: 450px;
+}
+/* 회원 정보 입력 파트 끝 */
+
+/* 하단 버튼 두 개 파트 시작 */
+.joinBtns{
+	width: 310px;
+	height: 45px;
+	justify-content: space-between;
+	margin: 20px auto;
+}
+.joinBtns > li{
+	width: 150px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	font-size: 14px;
+	border: 1px solid #666;
+	color: #666;
+	box-sizing: border-box;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.joinBtns > li:nth-of-type(2){
+	color: white;
+	background-color: #666;
+}
+/* 하단 버튼 두 개 파트 끝 */

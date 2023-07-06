@@ -1,0 +1,54 @@
+@charset "UTF-8";
+header{
+	width: 100%;
+}
+.base{
+	font-size: 12px;
+	width: 1100px;
+	height: 50px;
+	background-color: rgb(61,60,60);
+	color: #ccc;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.logo{
+	height: inherit;
+	display: flex;
+	flex-wrap: wrap;
+	line-height: 50px;
+	cursor: pointer;
+}
+
+/* 로고 아이콘 */
+.logo > span{
+	width: 50px;
+	height: inherit;
+	background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	background-position: 5px 5px;
+}
+
+/* 회원 출력 파트 */
+.base > ul{
+	height: inherit;
+	display: flex;
+	flex-wrap: wrap;
+}
+.base > ul > li{
+	line-height: 50px;
+	cursor: default;
+}
+.base > ul > li:after{
+	content: "|";
+	margin: 0 5px;
+	cursor: default;
+}
+.base > ul >li:last-of-type:after{
+	content: "";
+}
+.base > ul >li:nth-of-type(2), .base > ul >li:nth-of-type(3){
+	cursor: pointer;
+}

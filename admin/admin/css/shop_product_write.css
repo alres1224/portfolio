@@ -1,0 +1,124 @@
+@charset "UTF-8";
+.productBase{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.wrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* 최상단 '■ 상품 등록 페이지' 문구 */
+.productTop{
+	height: 30px;
+	line-height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #333;
+}
+.productTop > li:first-of-type{
+	color: red;
+}
+
+/* 상품 정보 등록 부분 */
+.productMiddle{
+	color: #333;
+	font-size: 13px;
+}
+.productMiddle > li{
+	display: flex;
+	flex-wrap: wrap;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 1px;
+}
+.productMiddle > li:nth-of-type(odd){
+	width: 160px;
+	color: white;
+	background-color: rgb(142, 106, 106);
+	text-indent: 10px;
+	margin-right: 5px;
+}
+.productMiddle > li:nth-of-type(even){
+	width: 835px;
+}
+.productMiddle > li:nth-of-type(6) > div{
+	width: 100px;
+	height: 30px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	background-color: #513D3D;
+	border-radius: 3px;
+	cursor: pointer;
+	margin: 5px 5px 0 0;
+}
+.productMiddle > li:nth-of-type(even)  input, .productMiddle > li:nth-of-type(even) > select{
+	height: 30px;
+	font-size: 13px;
+	box-sizing: border-box;
+	margin-right: 5px;
+}
+.productMiddle > li:nth-of-type(even) > input, .productMiddle > li:nth-of-type(even) > select{
+	margin-top: 5px;
+	width: 100px;
+}
+.productMiddle > li:nth-of-type(even) > label {
+	width: 125px;
+}
+.productMiddle > li:nth-of-type(even) > label > input{
+	vertical-align: -8px;
+}
+.productMiddle > li:nth-of-type(even) > select, .productMiddle > li:nth-of-type(6) > input{
+	width: 120px;
+}
+.productMiddle > li:nth-of-type(8) > input{
+	width: 250px;
+}
+.productMiddle > li:nth-of-type(10) > input{
+	width: 500px;
+}
+.productMiddle > li:nth-of-type(23){
+	height: 160px;
+	line-height: 160px;
+}
+.productMiddle > li:nth-of-type(24){
+	 height: 160px;
+	 align-items: center;
+}
+.productMiddle > li:nth-of-type(25){
+	 height: 420px;
+	 line-height: 420px;
+}
+.productMiddle > li:nth-of-type(26){
+	  height: 420px;
+	  padding: 10px 0;
+	  box-sizing: border-box;
+}
+textarea{
+	width: 830px;
+	height: 400px;
+}
+
+/* 하단 버튼 부분 */
+.productBottom{
+	width: 310px;
+	height: 45px;
+	line-height: 45px;
+	margin: 0 auto;
+	font-size: 13px;
+	justify-content: space-between;
+}
+.productBottom > li{
+	width: 150px;
+	height: inherit;
+	text-align: center;
+	border-radius: 4px;
+	color: white;
+	background-color: rgb(81, 61, 61);
+	cursor: pointer;
+}
+.productBottom > li:last-of-type{
+	background-color: rgb(132, 6, 6);
+}

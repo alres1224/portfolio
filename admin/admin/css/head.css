@@ -1,0 +1,28 @@
+@charset "UTF-8";
+header{
+	width: 600px;
+	height: 33px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-start;
+}
+.logo{
+	width: 30px;
+	height: 33px;
+	background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: 0 2px;
+}
+
+.logoText{
+	width: 200px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 17px;
+	color: #CCC;
+	font-weight: 700;
+	margin-top: 3px;
+	margin-left: 3px;
+	font-weight: 500;
+}

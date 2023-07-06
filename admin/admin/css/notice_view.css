@@ -1,0 +1,85 @@
+@charset "UTF-8";
+.wrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+.viewBase{
+	width: 1000px;
+	margin: 0 auto;
+	font-size: 13px;
+}
+
+/* ■ 공지사항 VIEW 페이지 문구 시작 */
+.viewTop{
+	width: inherit;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 3px solid rgb(81, 61, 61);
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+.viewTop > li:first-of-type{
+	color: red;
+}
+/* ■ 공지사항 VIEW 페이지 문구 끝 */
+
+/* 공지사항 내용 출력 파트 시작 */
+.viewMiddle{
+	width: inheirt;
+}
+.viewMiddle > li{
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid rgb(81, 61, 61)
+}
+.viewMiddle > li:nth-of-type(odd){
+	width: 250px;
+}
+.viewMiddle > li:nth-of-type(even){
+	width: 750px;
+}
+.viewMiddle > li:nth-of-type(9), .viewMiddle > li:nth-of-type(10){
+	height: 550px;
+}
+.viewMiddle > li > div{
+	width: 700px;
+	height: 540px;
+	overflow-y: auto;
+	border: 1px solid rgb(81, 61, 61);
+	padding: 5px;
+	box-sizing: border-box;
+	margin-top: 5px;
+}
+/* 공지사항 내용 출력 파트 끝 */
+
+/* 하단 버튼 파트 시작 */
+.viewBottom{
+	width: 480px;
+	height: 45px;
+	justify-content: space-between;
+	margin: 10px 0 20px 0;
+	float: right;
+}
+.viewBottom > li{
+	width: 150px;
+	height: inherit;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 4px;
+	color: white;
+	cursor: pointer;
+}
+.viewBottom > li:first-of-type{
+	background-color: rgb(27, 25, 25);
+}
+.viewBottom > li:nth-of-type(2){
+	background-color: rgb(20, 4, 91);
+}
+.viewBottom > li:last-of-type{
+	background-color: rgb(81, 61, 61);
+}
+.viewBottom > li:hover{
+	font-weight: bold;
+}
+/* 하단 버튼 파트 끝 */

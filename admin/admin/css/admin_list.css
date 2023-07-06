@@ -1,0 +1,111 @@
+@charset "UTF-8";
+section{
+	width: 100%;
+	height: auto;
+}
+.listBase{
+	width: 1100px;
+	margin: 0 auto;
+	font-size: 12px;
+}
+/* 신규등록 관리자 */
+.adminText{
+	width: 250px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 15px;
+	margin-top: 20px;
+}
+.adminText > a{
+	color: red;
+}
+
+/* 리스트 */
+.listTop, .listBody{
+	width: 1100px;
+	height: 30px;
+	background-color: rgb(81,61,61);
+	color: wheat;
+	display: flex;
+	flex-wrap: wrap;
+}
+.listBody{
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+	border-top: 0;
+	box-sizing: border-box;
+}
+.listTop > li, .listBody > li{
+	height: inherit;
+	line-height: 30px;
+	text-align: center;
+}
+.listBody > li:first-of-type{
+	width: 49px;
+}
+.listTop > li:first-of-type{
+	width: 50px;
+}
+.listTop > li:nth-of-type(2), .listBody > li:nth-of-type(2){
+	width: 120px;
+}
+.listTop > li:nth-of-type(3), .listBody > li:nth-of-type(3){
+	width: 140px;
+}
+.listTop > li:nth-of-type(4), .listBody > li:nth-of-type(4){
+	width: 150px;
+}
+.listTop > li:nth-of-type(5), .listBody > li:nth-of-type(5){
+	width: 230px;
+}
+.listTop > li:nth-of-type(6), .listBody > li:nth-of-type(6){
+	width: 100px;
+}
+.listTop > li:nth-of-type(7), .listBody > li:nth-of-type(7){
+	width: 80px;
+}
+.listTop > li:nth-of-type(8), .listBody > li:nth-of-type(8){
+	width: 120px;
+}
+.listTop > li:last-of-type{
+	width: 110px;
+}
+.listBody > li:last-of-type{
+	width: 109px;
+}
+.listTop > li::after{
+	content: "|";
+	float: right;
+}
+.listTop > li:last-of-type:after{
+	content: "";
+}
+
+/* 승인, 미승인 버튼 */
+.listBody > li:last-of-type{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.listBody > li > div{
+	width: 45px;
+	height: 20px;
+	background-color: black;
+	color: white;
+	font-size: 12px;
+	line-height: 20px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+/* 등록된 관리자 없을 때 */
+.listNull{
+	width: 1100px;
+	height: 30px;
+	border: 1px solid black;
+	line-height: 28px;
+	text-align: center;
+	box-sizing: border-box;
+}

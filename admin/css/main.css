@@ -1,0 +1,65 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 12px;
+}
+
+.divCss{
+    width: 1100px;
+    height: inherit;
+    margin: 0 auto;
+    position: relative;
+}
+.margin30{
+    margin-bottom: 30px;
+}
+
+/* nav 상단 메뉴 */
+.navCss{
+    height: 50px;
+}
+
+/* 배너 */
+.bannerCss{
+    height: 450px;
+}
+
+/* ad */
+.adCss{
+    height: 180px;
+    display: block;
+}
+.newCss{
+	height: 1482px;
+}
+/* MD's Pick */
+.mdCss{
+    height: 400px;
+}
+
+/* 공지사항 & 최신 트렌드 */
+.parentCss{
+    height: 360px;
+}
+.parentCss > div{
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.childCss{
+    width: 500px;
+    height: 310px;
+}
+
+/* footer 카피라이트 */
+.footerCss{
+    height: 300px;
+}

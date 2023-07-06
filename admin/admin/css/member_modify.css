@@ -1,0 +1,74 @@
+@charset "UTF-8";
+.modBase{
+	width: 550px;
+}
+
+/* 상단 고객정보 수정 문구 부분*/
+.modTop{
+	height: 60px;
+	background-color: rgb(61, 60, 60);
+	font-size: 19px;
+	font-weight: bold;
+	color: white;
+	text-indent: 10px;
+	line-height: 60px;
+}
+
+/* 수정 정보 입력 부분 */
+.modMiddle{
+	width: 500px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 15px;
+}
+.modMiddle > li{
+	height: 45px;
+	line-height: 45px;
+	border-bottom: 1px solid black;
+	box-sizing:border-box;
+}
+.modMiddle > li:nth-of-type(odd){
+	width: 150px;
+	font-weight: bold;
+	text-indent: 10px;
+}
+.modMiddle > li:nth-of-type(even){
+	width: 350px;
+}
+.modMiddle > li:nth-of-type(10){
+	display: flex;
+	flex-wrap: wrap;
+}
+.modMiddle > li:nth-of-type(10)>label:first-of-type{
+	margin-right: 10px;
+}
+
+/* 하단 버튼 부분 */
+.modBottom{
+	width: 315px;
+	height: 45px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.modBottom > li{
+	width: 150px;
+	height: inherit;
+	color: white;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 13px;
+	font-weight: bold;
+	background-color: #513D3D;
+	cursor: pointer;
+}
+.modBottom > li:last-of-type{
+	background-color: #000000;
+}
+.modBottom > li:hover{
+	color: wheat;
+}

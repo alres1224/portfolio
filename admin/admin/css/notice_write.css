@@ -1,0 +1,97 @@
+@charset "UTF-8";
+.writeBase{
+	width: 1000px;
+	margin: 0 auto;
+}
+.wrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* 공지사항 등록페이지 문구 출력 파트 */
+.writeTop{
+	width: inherit;
+	height: 30px;
+	margin-top: 20px;
+	line-height: 30px;
+	border-bottom: 3px solid rgb(81, 61, 61);
+	font-size: 15px;
+	color: red;
+}
+.writeTop > li:last-of-type{
+	font-weight: bold;
+	color: #333;
+	margin-left: 10px;
+}
+
+/* 공지사항 내용 입력 파트 */
+.writeMiddle{
+	width: inherit;
+	font-size: 13px;
+}
+.writeMiddle > li{
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid rgb(81, 61, 61);
+}
+.writeMiddle > li:nth-of-type(odd){
+	width: 250px;
+}
+.writeMiddle > li:nth-of-type(even){
+	width: 750px;
+}
+.writeMiddle > li:nth-of-type(9), .writeMiddle > li:nth-of-type(10){
+	height: 550px;
+}
+.writeMiddle > li:nth-of-type(2) > label{
+	display: inline-block;
+}
+.writeMiddle > li  input[type=checkbox]{
+	vertical-align: middle;
+}
+.writeMiddle > li > input[type=text], .writeMiddle > li > input[type=file]{
+	box-sizing: border-box;
+	font-size: 13px;
+	height: 30px;
+}
+.writeMiddle > li:nth-of-type(4) > input[type=text]{
+	width: 580px;
+}
+.writeMiddle > li:nth-of-type(6) > input[type=text]{
+	width: 200px;
+}
+.writeMiddle > li > textarea{
+	width: 700px;
+	height: 540px;
+	margin: 5px auto;
+	resize: none;
+	box-sizing: border-box;
+}
+
+/* 공지 목록, 공지 등록 버튼 */
+.writerBottom{
+	width: 315px;
+	height: 45px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	float: right;
+	margin: 10px 0;
+}
+.writerBottom > li{
+	width: 150px;
+	height: inherit;
+	font-size: 13px;
+	line-height: 45px;
+	text-align: center;
+	color: white;
+	background-color: rgb(81, 61, 61);
+	border-radius: 4px;
+	cursor: pointer;
+}
+.writerBottom > li:last-of-type{
+	background-color: rgb(132, 6, 6);
+}
+.writerBottom > li:hover{
+	font-weight: bold;
+}

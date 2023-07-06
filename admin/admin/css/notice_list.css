@@ -1,0 +1,127 @@
+@charset "UTF-8";
+.noticeBase{
+	width: 1000px;
+	margin: 0 auto;
+}
+.wrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+/* 공지사항 관리페이지 글자 출력 파트 */
+.noticeTop{
+	width: inherit;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 3px solid rgb(81, 61, 61);
+	font-size: 15px;
+	color: #333;
+	font-weight: bold;
+	margin-top: 20px;
+	box-sizing: border-box;
+}
+.noticeTop > li:first-of-type{
+	color: red;
+}
+
+/* 공지사항 목록 출력 파트 */
+.noticeMiddle{
+	width: inherit;
+	height: 40px;
+	font-size: 13px;
+	color: #333;
+	font-family: 굴림체;
+}
+.noticeMiddle > li{
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid rgb(81, 61, 61);
+	text-align: center;
+}
+.noticeMiddle > li:first-of-type{
+	width: 30px;
+}
+.noticeMiddle > li:nth-of-type(2){
+	width: 70px;
+}
+.noticeMiddle > li:nth-of-type(3){
+	width: 550px;
+	cursor: pointer;
+}
+.noticeMiddle > li:nth-of-type(4), .noticeMiddle > li:last-of-type{
+	width: 100px;
+}
+.noticeMiddle > li:nth-of-type(5){
+	width: 150px;
+}
+.noticeMiddle > li > input[type=text]{
+	vertical-align: middle;
+}
+.noticeIndex{
+	font-weight: bold;
+}
+.noticeList > li:nth-of-type(3){
+	text-align: left;
+}
+
+/* 등록된 공지 내용이 없습니다 */
+.noNotice{
+	width: inherit;
+	height: 40px;
+	line-height: 40px;
+	font-size: 13px;
+	color: #333;
+	font-family: 굴림체;
+	text-align: center;
+	border-bottom: 1px solid rgb(81, 61, 61);
+	box-sizing: border-box;
+}
+
+/* 공지 삭제, 공지 등록 버튼 */
+.noticeBtn{
+	width: 315px;
+	height: 45px;
+	justify-content: space-between;
+	float: right;
+	margin: 10px 0;
+}
+.noticeBtn > li{
+	width: 150px;
+	height: inherit;
+	font-size: 13px;
+	line-height: 45px;
+	text-align: center;
+	color: white;
+	background-color: rgb(81, 61, 61);
+	border-radius: 4px;
+	cursor: pointer;
+}
+.noticeBtn > li:last-of-type{
+	background-color: rgb(132, 6, 6);
+}
+.noticeBtn > li:hover{
+	font-weight: bold;
+}
+
+/* 페이지 화살표 */
+.noticeArrows{
+	clear: both;
+	font-size: 13px;
+	color: #333;
+	justify-content: center;
+}
+.arrow{
+	height: 30px;
+	line-height: 28px;
+	text-align: center;
+}
+.arrow > li{
+	width: 30px;
+	height: 30px;
+	border: 1px solid rgb(81, 61, 61);
+	box-sizing: border-box;
+	cursor: pointer;
+	border-right: 0;
+}
+.right > li:last-of-type{
+	border-right: 1px solid rgb(81, 61, 61);
+}

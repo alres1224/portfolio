@@ -1,0 +1,149 @@
+@charset "UTF-8";
+.wrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+.joinBase{
+	width: 1100px;
+	margin: 0 auto;
+	font-size: 13px;
+}
+
+/* 'HOME > 회원가입 > 약관동의' 파트 시작 */
+.joinPath{
+	height: 16px;
+	line-height: 16px;
+	font-family: "Malgun Gothic","맑은 고딕","AppleGothic","Dotum","돋움",sans-serif;
+	font-size: 12px;
+}
+.joinPath > li::after{
+	content: "▶";
+	padding: 0 3px;
+}
+.joinPath > li:last-of-type::after{
+	content: "";
+}
+/* 'HOME > 회원가입 > 약관동의' 파트 끝 */
+
+/* 회원가입 큰글씨 파트 시작 */
+.joinName{
+	width: 1100px;
+	justify-content: space-between;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #ccc;
+	color: #333;
+	margin-bottom: 20px;
+}
+.joinName > span{
+	font-size: 27px;
+	font-weight: 700;
+}
+.joinName > ul{
+	font-size: 14px;
+	font-weight: 300;
+}
+.joinName > ul > li:nth-of-type(even){
+	padding: 0 10px;
+}
+.joinName > ul > li:first-of-type{
+	font-weight: bold;
+}
+/* 회원가입 큰글씨 파트 끝 */
+
+.joinContainer{
+	width: 750px;
+	margin: 0 auto;
+}
+.joinContainer > h3{
+	width: inherit;
+	height: 40px;
+	border-bottom: 1px solid #ccc;
+	line-height: 40px;
+}
+.joinCkAll{
+	width: inherit;
+	height: 50px;
+	line-height: 50px;
+}
+.joinCkAll > li{
+	padding-right: 5px;
+}
+.joinCkAll > li:nth-of-type(2){
+	font-weight: bold;
+	color: #333;
+}
+.joinCkAll > li:last-of-type{
+	font-size: 11px;
+	color: #ccc;
+}
+.joinCk{
+	width: inherit;
+	height: 30px;
+	line-height: 30px;
+}
+.joinCk > li{
+	padding-right: 5px
+}
+.joinCk > li:nth-of-type(2){
+	font-weight: bold;
+}
+.joinCk > li:last-of-type{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.termsBox{
+	width: 740px;
+	height: 130px;
+	margin: 0 auto;
+	padding: 10px 10px 0 10px;
+	border: 1px solid #333;
+	box-sizing: border-box;
+	overflow-y: auto;
+	margin-bottom: 10px;
+}
+.termAll{
+	width: 100%; height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	position: fixed;
+	z-index: 10;
+	padding: 50px;
+	display: none;
+}
+.termAll > div{
+	position: relative;
+	height: 520px;
+	padding: 40px 10px 10px 10px;
+	background-color: white;
+	border-radius: 4px;
+}
+.termAll > div > label{
+	display: block;
+	width: 100%;
+	height: calc(100% - 40px);
+	overflow-y: auto;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+.termAll  button{
+	width: 100px;
+	height: 30px;
+	color: white;
+	background-color: black;
+	border-radius: 5px;
+	cursor: pointer;
+	float:right;
+}
+.nextBtn{
+	width: 150px;
+	height: 45px;
+	margin: 0 auto;
+	background-color: #666;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}

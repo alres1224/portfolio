@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+.memberBase{
+	width: 1000px;
+	margin: 20px auto;
+}
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+.gulim{
+	font-family: 굴림체;
+	font-size: 12px;
+}
+/* 회원관리 글자 출력 파트 */
+.memberTop{
+	width: 1000px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.memberTop > li:first-of-type{
+	font-weight: unset;
+	color: red;
+}
+
+/* 검색 부분 */
+.memberSearch{
+	height: 35px;
+	margin-bottom: 10px;
+}
+.memberSearch > li{
+	width: 100px;
+	height: inherit;
+	line-height: 35px;
+	margin-right: 5px;
+}
+.memberSearch > li:nth-of-type(2){
+	width: 270px;
+}
+.memberSearch > li:last-of-type{
+	margin: 0;
+	background-color: black;
+	color:white;
+	border-radius: 3px;
+	text-align: center;
+	cursor: pointer;
+}
+.memberSearch select, .memberSearch input[type=text]{
+	width: inherit;
+	height: inherit;
+	box-sizing: border-box;
+	text-indent: 5px;
+}
+
+/* 회원 리스트 목차 */
+.memberIndex{
+	height: 40px;
+	background-color:  rgb(81, 61, 61);
+	color: wheat;
+	font-size: 13px;
+	justify-content: space-between;
+	padding: 5px 0;
+	box-sizing: border-box;
+}
+.memberIndex > li, .memberInfo > li{
+	height: 30px;
+	line-height: 30px;
+	box-sizing: border-box;
+	width: 84px;
+	text-align: center;
+	border-right: 1px solid black;
+	box-sizing: border-box;
+}
+.memberIndex > li{
+	border-right: 1px solid wheat;
+}
+.memberIndex > li:first-of-type, .memberInfo > li:first-of-type{
+	width: 38px;
+	text-align: center;
+}
+.memberIndex > li:last-of-type, .memberInfo > li:last-of-type{
+	width: 120px;
+	text-align: center;
+	border: 0;
+}
+
+/* 회원리스트 본문 */
+.memberInfo{
+	height: 40px;
+	line-height: 40px;
+	justify-content: space-between;
+	border: 1px solid black;
+	border-top: 0;
+	padding: 5px 0;
+	box-sizing: border-box;
+}
+.memberInfo > li:last-of-type > div{
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	background-color: black;
+	color: white;
+	border-radius: 3px;
+	line-height: 30px;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+/* 회원 없을 경우 */
+.noMember{
+	width: 1000px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid black;
+	border-top: 0;
+	box-sizing: border-box;
+	display: none;
+}
+
+/* 페이지 번호 */
+.memberNo{
+	height: 45px;
+	justify-content: center;
+	margin-top: 10px;
+}
+.memberNo > li{
+	width: 35px;
+	height: 35px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	line-height: 35px;
+	border-radius: 3px;
+	cursor: pointer;
+	margin:5px;
+}
+
+/* 선택 삭제 버튼 */
+.memberDel{
+	width: 150px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	font-size: 13px;
+	background-color: rgb(81, 61, 61);
+	color: wheat;
+	border-radius: 3px;
+	cursor: pointer;
+}

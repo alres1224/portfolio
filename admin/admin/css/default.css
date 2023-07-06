@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* 
+font-family: 'Noto Sans KR', sans-serif; 
+100 300 400 500 700 900 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+
+body{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif; }
+h1,h2,h3,h4,h5,h6,form,fieldset{margin: 0; padding: 0; border: 0;}
+button{cursor: pointer; border:0;}
+input[type="button"], input[type="submit"], input[type="reset"]{cursor:pointer; border:0}
+ul, ol, dl{margin: 0; padding: 0; list-style: none;}
+select{margin: 0;}
+a:link, a:visited, a:hover, a:focus, a:active{color: #000; text-decoration: none;}
+p{margin: 0; padding: 0; word-break: break-all;}
+span, label{display: block;}
+.clear{clear: both;}

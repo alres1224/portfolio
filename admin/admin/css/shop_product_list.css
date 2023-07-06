@@ -1,0 +1,189 @@
+@charset "UTF-8";
+.pListBase{
+	width: 1000px;
+	margin: 20px auto;
+}
+.wrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+.gulim{
+	font-size: 12px;
+	font-family: 굴림체;
+}
+/* 상단 '■ 상품 관리 페이지' 부분 시작 */
+.pListTop{
+	height: 30px;
+	line-height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #333;
+}
+.pListTop > li:first-of-type{
+	color: red;
+	margin-right: 5px;
+}
+/* 상단 '■ 상품 관리 페이지' 부분 끝 */
+
+/* 상품 검색 부분 시작 */
+.pListSearch{
+	width: 480px;
+	justify-content: space-between;
+	height: 35px;
+}
+.pListSearch > li{
+	height: inherit;
+	line-height: 35px;
+}
+.pListSearch > li:first-of-type{
+	width: 100px
+}
+.pListSearch > li:nth-of-type(2){
+	width: 270px;
+}
+.pListSearch > li:last-of-type{
+	width: 100px;
+	background-color: black;
+	text-align: center;
+	color: white;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.pListSearch > li:first-of-type > select, .pListSearch > li:nth-of-type(2) > input{
+	width: inherit;
+	height: inherit;
+	box-sizing: border-box;
+	font-size: 12px;
+}
+/* 상품 검색 부분 끝 */
+
+/* 상품 리스트 목차 파트 시작 */
+.pList{
+	height: 40px;
+	background-color:  rgb(81, 61, 61);
+	font-size: 13px;
+	color: wheat;
+	line-height: 40px;
+	text-align: center;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+.pList > li, .pListPro > li{
+	position: relative;
+}
+.pList > li:first-of-type, .pListPro > li:first-of-type{
+	width: 28px;
+}
+.pList > li:nth-of-type(2),.pList > li:last-of-type, .pListPro > li:nth-of-type(2), .pListPro > li:last-of-type{
+	width: 70px;
+}
+.pList > li:nth-of-type(3), .pListPro > li:nth-of-type(3), .pList > li:nth-of-type(9), .pListPro > li:nth-of-type(9){
+	width: 65px;
+}
+.pList > li:nth-of-type(4), .pListPro > li:nth-of-type(4){
+	width: 310px;
+}
+.pList > li:nth-of-type(5), .pListPro > li:nth-of-type(5){
+	width: 95px;
+}
+.pList > li:nth-of-type(6),.pList > li:nth-of-type(7), .pListPro > li:nth-of-type(6), .pListPro > li:nth-of-type(7){
+	width: 70px;
+}
+.pList > li:nth-of-type(8), .pListPro > li:nth-of-type(8){
+	width: 50px;
+}
+.pList > li:nth-of-type(10), .pListPro > li:nth-of-type(10){
+	width: 80px;
+}
+.pList > li::after, .pListPro > li::after{
+	content: "|";
+	position: absolute;
+	right: -4px;
+}
+.pList > li:last-of-type::after, .pListPro > li:last-of-type::after{
+	content: "";
+}
+/* 상품 리스트 목차 파트 끝 */
+
+/* 상품 리스트 없을 때 파트 시작 */
+.pListVoid{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 13px;
+	border: 1px solid #333;
+	border-top: 0;
+	box-sizing: border-box;
+}
+/* 상품 리스트 없을 때 파트 끝 */
+
+/* 상품 리스트 파트 시작 */
+.pListPro{
+	height: 60px;
+	line-height: 60px;
+	justify-content: space-between;
+	border: 1px solid #333;
+	border-top: 0;
+	box-sizing: border-box;
+}
+.pListPro > li{
+	height: 60px;
+	text-align: center;
+}
+.pListPro > li > img{
+	width:59px;
+	height: 59px;
+}
+.pListPro > li > span{
+	width : 50px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: white;
+	background-color: black;
+	border-radius: 3px;
+	margin: 15px auto;
+	cursor: pointer;
+}
+/* 상품 리스트 파트 끝 */
+
+/* 상품 페이지 파트 시작 */
+#pListPage{
+	justify-content: center;
+	margin: 10px auto;
+}
+#pListPage > li{
+	width: 35px;
+	height: 35px;
+	margin: 0 5px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	line-height: 35px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+/* 상품 페이지 파트 끝 */
+
+/* 선택삭제, 상품등록 버튼 파트 시작 */
+.pListBtns{
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	justify-content: space-between;
+	font-size: 13px;
+	margin-top: 20px;
+}
+.pListBtns > li{
+	width: 150px;
+	height: inherit;
+	text-align: center;
+	color: white;
+	background-color: rgb(81, 61, 61);
+	border-radius: 3px;
+	cursor: pointer;
+}
+.pListBtns > li:last-of-type{
+	background-color: rgb(250, 53, 36) ;
+}
+/* 선택삭제, 상품등록 버튼 파트 끝 */

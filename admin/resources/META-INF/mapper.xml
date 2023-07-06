@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="memberDB">
+	<select id="selectAllRows" resultType="AdminVO">
+		select aidx,aid,apass,aname,aemail,atel,shopdepart.depart as adepart,shoppstn.pstn as aposition,aconfirm,adate from shopmember join shoppstn join shopdepart where shopmember.aposition=shoppstn.pidx and shopmember.adepart=shopdepart.didx and aconfirm='N' order by aidx desc
+	</select>
+	
+	<update id="adminOk">
+		update shopmember set aconfirm="Y" where aid=#{aid}
+	</update>
+	
+	<update id="updateRegset">
+		update shopregset set rpagename='${rpagename}', remail='${remail}',rpointuse='${rpointuse}',rpoint=${rpoint},rlvl=${rlvl}
+	</update>
+	<update id="updateDefset">
+		update shopdefset set bcorpname='${bcorpname}',bcorpnum='${bcorpnum}', bchairname='${bchairname}',bchairtel='${bchairtel}',btelbiznum='${btelbiznum}',baddbiznum='${baddbiznum}',bpostnum='${bpostnum}',baddr='${baddr}',bmgrname='${bmgrname}',bmgremail='${bmgremail}'		
+	</update>
+	<update id="updatePayset">
+		update shoppayset set pbankname='${pbankname}',pbanknum='${pbanknum}',pcredituse='${pcredituse}',pmobileuse='${pmobileuse}',pgiftuse='${pgiftuse}',pminpoint=${pminpoint},pmaxpoint=${pmaxpoint},pcashcheck='${pcashcheck}',pdelname='${pdelname}',pdelprice=${pdelprice},pdeldate='${pdeldate}'
+	</update>
+	
+	<select id="selectRegset" resultType="AdminVO">
+		select * from shopregset
+	</select>
+	<select id="selectDefset" resultType="AdminVO">
+		select * from shopdefset
+	</select>
+	<select id="selectPayset" resultType="AdminVO">
+		select * from shoppayset
+	</select>
+	
+	<select id="customerNum" resultType="int">
+		select count(*) from shopcustomer where csleep="N"
+	</select>
+	
+	<select id="selectCustomer" resultType="AdminVO" parameterType="java.util.Map">
+		select * from shopcustomer where csleep="N" order by cidx desc limit #{start}, #{pageSize}
+	</select>
+	
+	<update id="updateCsleep" >
+		update shopcustomer set csleep="Y" where cid=#{cid}
+	</update>
+	
+	<select id="searchCustomer" resultType="AdminVO" parameterType="java.util.Map">
+		select * from shopcustomer where ${column} like concat('%',#{cdata},'%') and csleep="N" order by cidx desc
+	</select>
+	
+	<delete id="delMembers" parameterType="java.lang.String">
+		delete from shopcustomer where cid=#{id}
+	</delete>
+	
+	<select id="popup" resultType="AdminVO" parameterType="java.lang.String">
+		select cid, cname, clvl, cpoint, coutdate from shopcustomer where cid=#{id}
+	</select>
+	
+	<update id="popupUpdate">
+		update shopcustomer set clvl=#{clvl}, cpoint=#{cpoint} where cid=#{cid}
+	</update>
+	
+	<insert id="insertNotice">
+		insert into shopnotice values ('0',#{ntop},#{nsubject},#{nwriter},#{nfile},#{ntext},default,default)
+	</insert>
+	
+	<!-- 공지사항 전체 개수 -->
+	<select id="noticeSelectNum" resultType="int">
+		select count(*) from shopnotice
+	</select>
+	
+	<!-- 공지사항 페이지 출력 -->
+	<select id="noticeSelect" resultType="NoticeVO" parameterType="java.lang.Integer">
+		select * from shopnotice order by nidx desc limit #{start},10
+	</select>
+	
+	<!-- 공지사항 삭제 -->
+	<delete id="noticeDelete" parameterType="java.lang.String">
+		delete from shopnotice where nidx=#{nidx}
+	</delete>
+	
+	<!-- 공지사항 VIEW 페이지 출력 내용 select 용 쿼리 -->
+	<select id="selectNotice" parameterType="java.lang.Integer" resultType="NoticeVO">
+		select * from shopnotice where nidx=#{nidx}
+	</select>
+	
+	<!-- 공지사항 수정용 -->
+	<update id="updateNotice" parameterType="NoticeVO">
+		update shopnotice set nsubject=#{nsubject}, nwriter=#{nwriter}, nfile=#{nfile}, ntext=#{ntext} where nidx=#{nidx}
+	</update>
+	
+	<!-- 공지사항 클릭 수 업데이트용 -->
+	<update id="updateNoticeClick" parameterType="NoticeVO">
+		update shopnotice set nclick=#{nclick} where nidx=#{nidx}
+	</update>
+	<!-- 배너, 팝업 url 출력용 -->
+	<select id="selectBannerInfo" resultType="SetupVO">
+		select * from shopimages
+	</select>
+	<!-- 배너, 팝업 url 업데이트용 -->
+	<update id="updateBanner" parameterType="java.util.Map">
+		update shopimages set iimages=#{iimages}, iurls=#{iurls} where isort=#{isort}
+	</update>
+	
+	<!-- 배너 정보 가져오는 용 -->
+	<select id="selectMainBanner" resultType="SetupVO">
+		select * from shopimages where isort='main';
+	</select>
+	
+	<!-- 상품코드 중복 확인용 -->
+	<select id="selectPcode" parameterType="java.lang.String" resultType="Integer">
+		select count(*) from shopproduct where pcode=#{pcode}
+	</select>
+	
+	<!-- 상품 등록용 -->
+	<insert id="insertProduct" parameterType="ProductVO">
+		insert into shopproduct values ('0',#{pbmenu},#{psmenu},#{pcode},#{pname},#{ptext1},#{pprice},#{pdiscount},#{pdisprice},#{pea},#{psale},#{psoldout},#{pimage1},#{pimage2},#{pimage3},#{ptext2})
+	</insert>
+	
+	<!-- 전체 상품 수 가져오는 용 -->
+	<select id="allProductEA" resultType="java.lang.Integer">
+		select count(*) from shopproduct
+	</select>
+	
+	<!-- 페이지 숫자 별 상품 가져오는 용도 -->
+	<select id="selectProduct" parameterType="java.lang.Integer" resultType="ProductVO">
+		select * from shopproduct order by pidx desc limit #{start},10
+	</select>
+	
+	<!-- 상품 삭제용 -->
+	<delete id="deleteProduct" parameterType="java.lang.String">
+		delete from shopproduct where pcode=#{pcode}
+	</delete>
+	
+	<!-- 상품 검색용 -->
+	<select id="searchProduct" resultType="ProductVO" parameterType="java.util.Map">
+		select * from shopproduct where ${column} like concat('%',#{pdata},'%') order by pidx desc
+	</select>
+	
+	<!-- 고객 회원 가입 시 필요한 정보 불러오는 용 -->
+	<select id="selectOkData" resultType="RegSetVO">
+		SELECT rpoint, rlvl FROM shopregset
+	</select>
+	
+	<!-- 고객 회원 가입용 -->
+	<insert id="joinCustomer" parameterType="CustomerVO">
+		insert into shopcustomer values('0',#{cid},#{cname},#{cpass},#{clvl},#{cpoint},#{cemail},#{cmobile},#{ctel},#{caddr},#{cemailok},#{csmsok},default,null,null,'N')
+	</insert>
+	
+	<!-- 메인 출력용 상품 정보 가져오는 용 -->
+	<select id="selectProductInfo" resultType="ProductVO">
+		select pname,ptext1,pprice,pdiscount,pdisprice,pimage1 from shopproduct where pbmenu!="이주의 핫딜" order by pidx desc limit 9
+	</select>
+	
+	<!-- 메인 출력용 MD's Pick 상품 가져오는 용 -->
+	<select id="selectMDInfo" resultType="ProductVO">
+		select pname,ptext1,pprice,pdiscount,pdisprice,pimage1 from shopproduct where pbmenu="이주의 핫딜" order by pidx desc limit 2
+	</select>
+	
+	<!-- 메인 출력용 공지사항 정보 가져오는 용 -->
+	<select id="selectNoticeInfo" resultType="NoticeVO">
+		select * from shopnotice order by nidx desc limit 5
+	</select>
+	
+	<!-- 고객 로그인용 -->
+	<select id="loginCustomer" resultType="CustomerVO">
+		select cid,cname from shopcustomer where cid=#{cid} and cpass=#{cpass}
+	</select>
+	
+	<!-- 고객 로그인 날짜 업데이트용 -->
+	<update id="updafeLoginDate" parameterType="CustomerVO">
+		update shopcustomer set clogdate=#{clogdate} where cid=#{cid}
+	</update>
+	<!-- 메인 페이지 공지사항 검색용 -->
+	<select id="noticeSearch" parameterType="java.lang.String" resultType="NoticeVO">
+		select * from shopnotice where nsubject like '%${nsubject}%'
+	</select>
+	<!-- 카피라이트 출력용 정보 가져오는 용 -->
+	<select id="footerInfo" resultType="AdminVO">
+		select * from shopdefset
+	</select>
+	<!-- 카피라이트 출력용 은행 정보 가져오는 용 -->
+	<select id="footerInfo2" resultType="AdminVO">
+		select * from shoppayset
+	</select>
+	<!-- 타이틀 출력용 정보 가져오는 용 -->
+	<select id="title" resultType="java.lang.String">
+		select rpagename from shopregset
+	</select>
+</mapper>
